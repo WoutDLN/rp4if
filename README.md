@@ -1,8 +1,8 @@
 # rp4if
 
-rp4if is short for RPi-IIIF – a combination of the two technologies that this tutorial website combines in a training course that was initially taught at the 2018 [Antwerp Summer School in Digital Humanities: Processing and Analysing Images](https://www.uantwerpen.be/en/summer-schools/digital-humanities--/).  
+rp4if is short for RPi-IIIF – a combination of the two technologies that this [Remark.js](https://github.com/gnab/remark) tutorial website combines in a training course that was initially taught at the 2018 [Antwerp Summer School in Digital Humanities: Processing and Analysing Images](https://www.uantwerpen.be/en/summer-schools/digital-humanities--/).  
 
-This course was taught by Wout Dillen and Joshua Shaüble. For a more detailed description of who did what and was sponsored by whom, please visit our [Credits and Copyright](credits.html) page. 
+This course was taught by Wout Dillen and Joshua Shaüble. For a more detailed description of who did what and was sponsored by whom, please visit our [Credits and Copyright](https://woutdln.github.io/rp4if/credits.html) page. 
 
 ## RPi
 
