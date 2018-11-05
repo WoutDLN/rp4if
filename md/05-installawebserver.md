@@ -9,9 +9,64 @@ name: titleslide
 
 .yellow[Wout Dillen & Joshua Schäuble]
 
-.bottomleft[.mirror[&#10148;] Back to [Step 4](step4.html)]]
+.bottomleft[.mirror[&#10148;] Back to [Step 4](step4.html)]
 
 ---
+
+##Introduction
+
+In [the previous step](step4.html#html), we have created a document that a browser can read: `index.html`. As the file's extension already suggests, this document is written in `html`, or **HyperText Markup Language**. 
+
+That `html` is a markup language explains why it is structured with so many angled brackets (like `<html>` for example). But we won't go into that here. What's more important for us now, is that this document is a **hypertext** – a text that is potentially linked with other text, through what are called **hyperlinks**. This is basically how the internet functions. When you visit a **site**, you arrive on a specific **page** (typically the homepage) that contains a small part of all the site's information. This information is distributed among a series of such pages, that you can navigate to (or **browse**) by clicking on the many **links** between the pages. Each of these pages is typically an individual `html` document.
+
+We visit these pages through use our **browser** (Firefox, Chrome, Safari, Internet Explorer, etc.). As the word _visit_ suggests, these pages are typically not stored locally, but elsewhere – on a faraway server in an undisclosed location. To be able to communicate with these servers, the browser uses `HTTP`, or **HyperText Transfer Protocol**. That is why the links of web pages usually start with `http://` (even though at first sight most modern browsers hide this information from the address bar). 
+
+In this act of communication, a _request_ is sent by the **client**, typically a browser – an application that you host on your computer. And the _response_ is sent by an application hosted on another computer – typically a **web server**: an application that serves web pages to browsers. It is this type of application that we will now be setting up on our RPi, so the browsers inside of our network can access the web pages on our RPis. 
+
+
+---
+
+### 1. Update APT Package Lists
+
+We can download and install software (like the web server that we need) via APT (or: Application Package Tool). This is basically an **app store** for Debian – the Linux-based operating system that your RPi's is built on. More specifically, the command line command we can use to download and install software from APT is `apt-get`.
+
+Before we do that, however, it's good practice to first run the following command:
+
+```bash
+sudo apt-get update
+```
+
+This command will update APT's package list – a list of links to the public repositories where the most up-to-date versions of APT's software packages are hosted. In other words: this command makes sure that when you use `apt-get` to download and install a specific software package, that it uses the most up-to-date version of that software to do so.
+
+---
+
+### 2. Install Apache2 (with fcgid)
+
+Now it's time to download our software! The web server that we're going to use is the commonly used Apache2 webserver. In addition, we also need to install one of Apache2's modules (a kind of _sub-software-package_) called `fcgid`. 
+
+With `apt-get install`, you can line up a series of software packages to install them all with a single command.So go ahead and run:
+
+```bash
+sudo apt-get install apache2 libapache2-mod-fcgid
+```
+
+On running this command, `apt-get` will inform you if the software has any dependencies (other software that needs to be downloaded), and tells you how much disk space these downloads will take up on your RPi. You'll have to confirm with `y`, and wait until your packages are downloaded and installed. As we're all on the same network and the RPi's aren't very fast, this may take a while.  
+
+---
+
+### 3. Start Web Server
+
+Once the software is downloaded, we can start it up on the RPi. Run:
+
+```bash
+systemctl start apache2
+```
+
+Here, you will be asked which user you want to use to run the Apache2 service. Choose `1` (pi) and confirm with `enter`. The command line will then prompt you for a password, so type in [your RPi's password](step2.html#pw) and confirm by hitting `enter` again. 
+
+The command we've just run – `systemctl` – is a utility to manage (start, stop, restart) services on your RPi (like the Apache2 service we've just installed). We'll be using it a lot in this tutorial, so make sure you remember your RPi password!
+
+
 
 ---
 class: center, middle, darkslide
