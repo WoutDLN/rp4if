@@ -92,7 +92,7 @@ Instead of relocating the folder Apache points to, we move our content (those fi
 
 Copy the `html` folder from the `Desktop` to `/var/www`. Tip: remember that you will also need to copy all **subdirectories** and their contents.]
 
---
+---
 .note[**Solution**: 
 ```bash
 	sudo cp -r /home/pi/Desktop/html/ /var/www/
@@ -101,12 +101,6 @@ Copy the `html` folder from the `Desktop` to `/var/www`. Tip: remember that you 
 Now you can enter your IP address into the browser of your laptop. If everything went well, you can load the website from your RPi (which now functions as your server) on your laptop (which funtions as the client). 
 
 .note[**Warning!** Note that the other people in your network (in this case: this room) can also access your website via their browsers now. If you would be connected to the internet, this could open up your files to the rest of the world.]
-
-???
-Solution:
-```bash
-	sudo cp -r /home/pi/Desktop/html/ /var/www/
-```
 
 ---
 class: center, middle, darkslide
