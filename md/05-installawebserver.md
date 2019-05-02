@@ -70,13 +70,32 @@ The command we've just run – `systemctl` – is a utility to manage (start, st
 
 ### 4. Test Apache
 
-Before we do anything else, we'd like to make sure that our Apache **webserver is actually running**. 
-
-On your computer, open a browser, enter [your RPi's IP Address](step3.html#ip) into the browser's address bar, and confirm with `enter`.
+Before we do anything else, we'd like to make sure that our Apache **webserver is actually running**. On your computer, open a browser, enter [your RPi's IP Address](step3.html#ip) into the browser's address bar, and confirm with `enter`.
 
 You should now see the Apache2 Debian Default Page. On the top of that page, in a red banner, you’ll read **“It works!”**
 
-Congratulations, your webserver is up and running!
+---
+
+### 5. Viewing our Website
+
+Apache grants external (browser) access only to select folders on your system. Anything more than that would be crazy. **Can you tell why?**
+
+--
+
+By default only contents that are in the folder `/var/www/html/` are accessible. Although this folder could be changed (e.g. to your Desktop, or a folder in your Documents folder) that is not considered to be good practice. 
+
+Instead of relocating the folder Apache points to, we move our content (those files we want to access via the browser) to the default folder. 
+
+Copy the html folder from the Desktop to `/var/www`
+
+```bash
+	sudo cp -r /home/pi/Desktop/html/ /var/www/
+```
+
+Now you can enter your IP address into the browser of your laptop. If everything went well, you can load the website from your RPi (which now functions as your server) on your laptop (which funtions as the client). 
+
+.note[**Warning!** Note that the other people in your network (in this case: this room) can also access your website via their browsers now. If you would be connected to the internet, this could open up your files to the rest of the world.]
+
 
 ---
 class: center, middle, darkslide
