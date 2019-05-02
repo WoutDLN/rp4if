@@ -66,7 +66,19 @@ Here, you will be asked which user you want to use to run the Apache2 service. C
 
 The command we've just run – `systemctl` – is a utility to manage (start, stop, restart) services on your RPi (like the Apache2 service we've just installed). We'll be using it a lot in this tutorial, so make sure you remember your RPi password!
 
+---
 
+### 4. Test Apache
+
+Before we do anything else, we'd like to make sure that our Apache **webserver is actually running**. 
+
+On your computer, open a browser, enter [your RPi's IP Address](step3.html#ip) into the browser's address bar, and confirm with `enter`.
+
+You should now see the Apache2 Debian Default Page. On the top of that page, in a red banner, you’ll read **“It works!”**
+
+--
+
+Congratulations, your webserver is up and running!
 
 ---
 class: center, middle, darkslide

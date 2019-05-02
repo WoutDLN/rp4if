@@ -147,7 +147,7 @@ route
 This command will show you your routing table: a list of all the system's **routing destinations** (in the form of IP addresses), that tell the system where to send which data packages. Here you can double-check that the metric value of the `wlan0` interface is now lower than that of the `eth0` interface.
 
 --
-
+name: ip
 ###6. Note down your IP Address
 As we explained in the [introduction](#introduction), we will need the IP address that our router has assigned to our RPi to [SSH into the RPi](step2.html#ssh) via our laptops. We can find the IP address we need by running the following command: 
 
