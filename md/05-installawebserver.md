@@ -82,20 +82,24 @@ Apache grants external (browser) access only to select folders on your system. A
 
 --
 
-By default only contents that are in the folder `/var/www/html/` are accessible. Although this folder could be changed (e.g. to your Desktop, or a folder in your Documents folder) that is not considered to be good practice. 
+By default only contents that are in the folder `/var/www/html/` are accessible. Although this folder could be changed (e.g. to your `Desktop`, or a folder in your `Documents`) doing so is **not considered good practice**. 
 
-Instead of relocating the folder Apache points to, we move our content (those files we want to access via the browser) to the default folder. 
+Instead of relocating the folder Apache points to, we move our content (those files we want to access via the browser) to the default folder.
 
-Copy the html folder from the Desktop to `/var/www`
+**Command Line Exercise** 
 
-```bash
-	sudo cp -r /home/pi/Desktop/html/ /var/www/
-```
+Copy the `html` folder from the `Desktop` to `/var/www`.
+
 
 Now you can enter your IP address into the browser of your laptop. If everything went well, you can load the website from your RPi (which now functions as your server) on your laptop (which funtions as the client). 
 
 .note[**Warning!** Note that the other people in your network (in this case: this room) can also access your website via their browsers now. If you would be connected to the internet, this could open up your files to the rest of the world.]
 
+???
+Solution:
+```bash
+	sudo cp -r /home/pi/Desktop/html/ /var/www/
+```
 
 ---
 class: center, middle, darkslide
