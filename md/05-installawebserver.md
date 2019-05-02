@@ -93,6 +93,8 @@ Instead of relocating the folder Apache points to, we move our content (those fi
 Copy the `html` folder from the `Desktop` to `/var/www`. Tip: remember that you will also need to copy all **subdirectories** and their contents.]
 
 ---
+### 5. Viewing our Website
+
 .note[**Solution**: 
 ```bash
 	sudo cp -r /home/pi/Desktop/html/ /var/www/
