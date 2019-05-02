@@ -86,10 +86,17 @@ By default only contents that are in the folder `/var/www/html/` are accessible.
 
 Instead of relocating the folder Apache points to, we move our content (those files we want to access via the browser) to the default folder.
 
-**Command Line Exercise** 
+--
 
-Copy the `html` folder from the `Desktop` to `/var/www`.
+.note[**Exercise** ([cheat sheet](cheat.html#toc))
 
+Copy the `html` folder from the `Desktop` to `/var/www`. Tip: remember that you will also need to copy all **subdirectories** and their contents.]
+
+--
+.note[**Solution**: 
+```bash
+	sudo cp -r /home/pi/Desktop/html/ /var/www/
+```]
 
 Now you can enter your IP address into the browser of your laptop. If everything went well, you can load the website from your RPi (which now functions as your server) on your laptop (which funtions as the client). 
 
