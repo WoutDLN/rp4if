@@ -76,7 +76,6 @@ On your computer, open a browser, enter [your RPi's IP Address](step3.html#ip) i
 
 You should now see the Apache2 Debian Default Page. On the top of that page, in a red banner, you’ll read **“It works!”**
 
-
 Congratulations, your webserver is up and running!
 
 ---
