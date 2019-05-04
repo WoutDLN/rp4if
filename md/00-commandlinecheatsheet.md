@@ -26,6 +26,7 @@ A simple cheat sheet for some of the most common command line commands to be use
 6. [rm](#rm)
 7. [cp](#cp)
 8. [mv](#mv)
+9. [flags](#-r)
 
 .note[**Note:** These commands are all **bash** commands (Unix shell), that work on **Linux-Based Operating Systems**. 
 
@@ -40,6 +41,7 @@ class: darkslide
 ## Present Working Directory | `pwd`
 
 .yellow[Example command:]
+
 ```bash
 pwd 
 ```
@@ -49,6 +51,7 @@ pwd
 Shows you where you are in the terminal. 
 
 .yellow[Example output:]
+
 ```bash
 /Users/WoutDLN/Documents
 ```
@@ -60,6 +63,7 @@ class: darkslide
 ## List | `ls`
 
 .yellow[Example command:]
+
 ```bash
 ls 
 ```
@@ -69,6 +73,7 @@ ls
 Shows you a list of all the documents and folders in your present working directory.  
 
 .yellow[Example output:]
+
 ```bash
 Applications
 Desktop
@@ -83,14 +88,17 @@ class: darkslide
 ## Change Directory | `cd`
 
 .yellow[Example command:]
+
 ```bash
 cd /Users/WoutDLN/Documents
 ```
 or
+
 ```bash
 cd Documents
 ```
 or
+
 ```bash
 cd ..
 ```
@@ -106,6 +114,7 @@ class: darkslide
 ## Make Directory | `mkdir`
 
 .yellow[Example command:]
+
 ```bash
 mkdir new 
 ```
@@ -121,6 +130,7 @@ class: darkslide
 ## Make File | `touch`
 
 .yellow[Example command:]
+
 ```bash
 touch newfile.txt
 ```
@@ -136,6 +146,7 @@ class: darkslide
 ## Remove File | `rm`
 
 .yellow[Example command:]
+
 ```bash
 rm new/newfile.txt
 ```
@@ -151,10 +162,12 @@ class: darkslide
 ## Copy File | `cp`
 
 .yellow[Example command:]
+
 ```bash
 cp source.txt Desktop/.
 ```
 or
+
 ```bash
 cp source.txt Desktop/target.txt
 ```
@@ -170,14 +183,17 @@ class: darkslide
 ## Move File | `mv`
 
 .yellow[Example command:]
+
 ```bash
 > mv source.txt Desktop/.
 ```
 or
+
 ```bash
 mv source.txt Desktop/newsource.txt
 ```
 or
+
 ```bash
 mv Desktop/source.txt Desktop/newsource.txt
 ```
@@ -185,6 +201,47 @@ mv Desktop/source.txt Desktop/newsource.txt
 .yellow[What does it do?]
 
 Moves your file to a new location without copying it. After typing the `mv` command, you type the path (*relative* or *absolute*) of the file you want to move, and then the path (*relative* or *absolute*) of the place where you want to move it too. In the first example, the `.` indicates that the name of the file should remain the same while moving. In the second example, putting a new file name at the end of the end of the target path indicates that you want to change the name of the file while copying. In the third example, the file is only renamed, because the location of the source file and the target file is the same. (In other words: you move a file into the same spot, but rename it in the process). 
+
+---
+
+name: -r
+class: darkslide
+
+## Flags
+
+### Recursively | `-r`
+
+.yellow[Example Command:]
+
+```bash
+rm -r new
+```
+.yellow[What does it do?]
+
+Tells the terminal to apply the command to any and all sub-directories or files the selected directory may contain (in this case: the `new` directory). 
+
+---
+
+name: -f
+class: darkslide
+
+## Flags
+
+### Forcefully | `-f`
+ 
+.yellow[Example Command:]
+
+```bash
+rm -f new
+```
+.yellow[What does it do?]
+
+Urges the terminal to not ask your permission for any sub-tasks it needs to perform – such as copying or removing [subdirectories and their contents with](#-r) `-r`.
+
+.note[**CAREFUL:** By using the shell, you are bypassing your system's GUI, which means that the files and directories you delete will no longer be recoverably through your system's trash folder!
+
+**USE WITH CAUTION!** This gives you the power to remove your entire hard drive with a single command!]
+
 
 ---
 
