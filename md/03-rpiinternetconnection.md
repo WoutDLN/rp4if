@@ -62,11 +62,11 @@ Since your RPi's ethernet interface is already in use (to support our local RPi 
 
 Connect your RPi to the following WiFi network: `UA-guest`. 
 
-.note[.orange[Note for students]: `UA-guest` is the guest network at the [University of Antwerp](https://www.uantwerpen.be), where this course was first taught. If you are following this course at another institution, your tutor will tell you which WiFi network to connect to instead.]
+.note[**Note for students:** `UA-guest` is the guest network at the [University of Antwerp](https://www.uantwerpen.be), where this course was first taught. If you are following this course at another institution, your tutor will tell you which WiFi network to connect to instead.]
 
 **Open your browser**. 
 
-Nothing will happen – yet. **Can you guess why**?
+.question[Nothing will happen – yet. **Can you guess why**?]
 
 ---
 
@@ -90,7 +90,7 @@ sudo nano /etc/dhcpcd.conf
 
 This will tell the RPi to use the programme `nano` to open a file located in the path `/etc/dhcpcd.conf`.
 
-.note[.orange[Question]: What kind of path is this? To freshen up your command line skills, have a look at our [Quick Reference Guide](cheat.html).]
+.question[**Question:** What kind of path is this? To freshen up your command line skills, have a look at our [Quick Reference Guide](cheat.html).]
 
 `nano` is a **shell text editor**. It allows you to change and save text files straight from the command line, using some very rudimentary controls.
 

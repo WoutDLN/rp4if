@@ -83,13 +83,9 @@ name: html
 
 ###3. Creating a HTML Document in `nano`
 
-First, navigate back to the `html` directory on your `Desktop`:
+.exercise[First, navigate back to the `html` directory on your `Desktop`.]
 
-```bash
-cd /home/pi/Desktop/html
-```
-
-Now open the `index.html` file with nano:
+Now open the `index.html` file with `nano`:
 
 ```bash
 nano index.html
@@ -111,8 +107,12 @@ Now you can use the command line text editor [nano](step3.html#nano) to write th
 </html>
 ```
 
-Take a closer look at the code. **Can you figure out what it does?**
+.question[Take a closer look at the code. **Can you figure out what it does?**]
 
+???
+```bash
+cd /home/pi/Desktop/html
+```
 ---
 
 ###3. Creating a HTML Document in `nano`
@@ -125,7 +125,7 @@ In the code, the following line will load an image from your `html/images` direc
 <img src="images/frankenstein.jpg" style="width:300px;" />
 ```
 
-.note[Notice that we are using the `.jpg` image for our webpage, not the `.png` images. **Why could using the `.png` images be a bad idea?**]
+.question[Notice that we are using the `.jpg` image for our webpage, not the `.png` images. **Why could using the** `.png` **images be a bad idea?**]
 
 When you're satisfied that the file is copied correctly into your command line through `nano`, save the file with `Ctrl+o`, and quit `nano` with `Ctrl+x`.
 

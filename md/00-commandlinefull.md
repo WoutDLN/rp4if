@@ -482,7 +482,7 @@ rm -rf new
 ```
 This command will effectively remove your `new` directory from your hard drive, as well as anything else that may still be contained within that directory. 
 
-.note[**CAREFUL:** By using the shell, you are bypassing your system's GUI, which means that the files and directories you delete **will no longer be recoverably through your system's trash folder**!
+.warning[**CAREFUL:** By using the shell, you are bypassing your system's GUI, which means that the files and directories you delete **will no longer be recoverably through your system's trash folder**!
 
 **USE WITH CAUTION!** This gives you the power to **remove your entire hard drive** with a single command!]
 
@@ -492,14 +492,14 @@ name: cp
 
 ###6. Copying files | `cp`
 
-.note[**Exercise**: create a file called `source.txt` in your Home Dolder (using `touch`).]
+.exercise[**Exercise:** create a file called `source.txt` in your `home` directory (using `touch`).]
 
 Now, we can copy this file to the Desktop, using the `cp` command, which has two arguments, separated by a space:
 
-1. **Source Path**: The location of the file that needs to be copied – in our case `source.txt`
-2. **Target Path**: The location that the file needs to be copied to – in our case `Desktop/.`
+1. **Source Path:** The location of the file that needs to be copied – in our case `source.txt`
+2. **Target Path:** The location that the file needs to be copied to – in our case `Desktop/.`
 
-.note[**Question**: These are two relative paths. **What would their absolute paths be?**]
+.question[**Question:** These are two relative paths. **What would their absolute paths be?**]
 
 The full command to copy `source.txt` to the `Desktop` would be:
 
@@ -547,7 +547,7 @@ The `.` at the end here again indicates that we don’t want to change the file�
 
 Using `ls` you should now be able to verify that the `source.txt` file is no longer present in your `Home Directory`. It has been _moved_ rather than _copied_. 
 
-.note[**Careful!** At this point, there was already a file on your `Desktop` called `source.txt`. 
+.warning[**Careful!** At this point, there was already a file on your `Desktop` called `source.txt`. 
 
 Copying or moving a file (a) into a directory that already contains a file with the same name (b) will effectively overwrite the former with the latter. 
 
@@ -557,7 +557,7 @@ In the command line, there is no prompt to warn you that you are doing so – un
 
 class: darkslide, center, middle
 
-.note[.center[**Question:**
+.question[.center[**Question:**
 
 Based on what we have learned so far, could you guess how we can use these commands to rename a file?]]
 

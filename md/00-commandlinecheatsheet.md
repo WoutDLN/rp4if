@@ -238,7 +238,7 @@ rm -f new
 
 Urges the terminal to not ask your permission for any sub-tasks it needs to perform – such as copying or removing [subdirectories and their contents with](#-r) `-r`.
 
-.note[**CAREFUL:** By using the shell, you are bypassing your system's GUI, which means that the files and directories you delete will no longer be recoverably through your system's trash folder!
+.warning[**CAREFUL:** By using the shell, you are bypassing your system's GUI, which means that the files and directories you delete will no longer be recoverably through your system's trash folder!
 
 **USE WITH CAUTION!** This gives you the power to remove your entire hard drive with a single command!]
 

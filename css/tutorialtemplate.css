@@ -71,6 +71,46 @@
         white-space: normal;
         text-align: justify;
       }
+      .question {            
+        padding: 1.5em;
+        font-size: 85%;
+        border-radius: 3px;
+        background-color: rgba(27,31,35,0.05);
+        border: 2px solid rgb(69, 155, 191);
+        display: block;
+        white-space: normal;
+        text-align: justify;
+      }  
+      .warning {            
+        padding: 1.5em;
+        font-size: 85%;
+        border-radius: 3px;
+        background-color: rgba(27,31,35,0.05);
+        border: 2px solid rgb(241, 35, 114);
+        display: block;
+        white-space: normal;
+        text-align: justify;
+      }  
+      .exercise {            
+        padding: 1.5em;
+        font-size: 85%;
+        border-radius: 3px;
+        background-color: rgba(27,31,35,0.05);
+        border: 2px solid rgb(252, 225, 88);
+        display: block;
+        white-space: normal;
+        text-align: justify;
+      }
+      .solution {            
+        padding: 1.5em;
+        font-size: 85%;
+        border-radius: 3px;
+        background-color: rgba(27,31,35,0.05);
+        border: 2px solid rgb(124, 182, 150);
+        display: block;
+        white-space: normal;
+        text-align: justify;
+      }
       .quote {
         background-color: rgb(40, 41, 35);
         color: rgb(231, 219, 116);
@@ -145,6 +185,12 @@
       }
       .orange {
         color: rgb(243, 135, 48);
+      }
+      .blue {
+        color: rgb(106, 204, 203);
+      }
+      .green {
+        color: rgb(124, 182, 150);
       }
       .margins {
         margin: 1em;

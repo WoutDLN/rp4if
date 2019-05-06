@@ -23,7 +23,7 @@ For that, we will install a **IIIF-compliant** image server called **IIPImage**.
 
 --
 
-.note[**Question:** even if our website didn't have to be IIIF-compliant, what would the benefet be of installing a dedicated image server for your website?]
+.question[**Question:** even if our website didn't have to be IIIF-compliant, what would the benefet be of installing a dedicated image server for your website?]
 
 ---
 
@@ -46,11 +46,11 @@ By default, the data directory of the image server is under `/usr/lib/iipimage-s
 
 To do so, we have to copy the folder over to `/var/www/` and tell the image server where the data directory has moved.
 
-.note[**Exercise:** copy the `iipimage-server` directory from `/usr/lib/` to `/var/www`. When you are done, check that the folder has really been copied (e.g. change directories to the new folder and list its contents).]
+.exercise[**Exercise:** copy the `iipimage-server` directory from `/usr/lib/` to `/var/www`. When you are done, check that the folder has really been copied (e.g. change directories to the new folder and list its contents).]
 
 ---
 
-.note[**Solution:**```bash
+.solution[**Solution:**```bash
 sudo cp -r /usr/lib/iipimage-server/ /var/www/iipimage-server/ 
 ```]
 
@@ -116,7 +116,7 @@ systemctl restart apache2
 
 In the image servers configuration file we have to enable “cross origin resource sharing” (CORS). It is important to enable this setting to make sure the image server is IIIF-compliant, because it allows others to embed your images into their website. 
 
-.note[**Question:** Outside of the IIIF community, the general rule in web development is not to enable CORS in any event. **Can you guess why?**]
+.question[**Question:** Outside of the IIIF community, the general rule in web development is not to enable CORS in any event. **Can you guess why?**]
 
 --
 
