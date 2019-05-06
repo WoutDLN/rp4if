@@ -39,6 +39,7 @@ sudo apt-get update
 This command will update APT's package list – a list of links to the public repositories where the most up-to-date versions of APT's software packages are hosted. In other words: this command makes sure that when you use `apt-get` to download and install a specific software package, that it uses the most up-to-date version of that software to do so.
 
 ---
+name: fcgid
 
 ### 2. Install Apache2 (with fcgid)
 
