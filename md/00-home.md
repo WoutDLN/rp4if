@@ -27,7 +27,7 @@ count: false
 .separatecolumn[.orange[Tutorial – Web Server]
 * Step 5 | [Set Up a Web Server on your RPi](step5.html)
 * Step 6 | [Install the IIPImage Server on your RPi](step6.html)
-* Step 7 | [dummy](step3.html)
+* Step 7 | [Pyramid TIFFs for IIPImage Server](step7.html)
 * Step 8 | [dummy](step4.html)
 
 .orange[Tutorial – Image Server]
