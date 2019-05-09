@@ -40,7 +40,7 @@ You will be prompted for your RPi's password. Type in [the password that you've 
 .note[**You are now connected to your RPi!** Everything you do on this ssh shell is executed on the raspberry. Working on the ssh shell is like working on a terminal directly on the raspberry.]
 
 ---
-
+name: clexp1
 ###2. Creating Files and Directories
 
 .note[**Note:** at this point, your tutors should have _either_ already put a folder on your RPi's `Desktop`, _or_ prepared a **USB-stick** that passes around while you complete this exercise. In the second case, when you get the USB, you can turn your RPi's monitor on, plug the USB into the RPi, and copy the directory with your RPi's name onto your `Desktop`. (The **whole** directory, **not just the files that are inside**). When this is done, turn the monitor off again, and continue with the following exercise.]
@@ -57,7 +57,7 @@ You will be prompted for your RPi's password. Type in [the password that you've 
 .note[**Note:** To continue beyond this point, you will need the folder provided by your tutors to be copied to your `Desktop`.]
 
 ---
-
+name: clexp2
 ###2. Creating Files and Directories
 
 **Command Line Exercise: Part 2** (You can use the [cheat sheet](cheat.html#toc))
