@@ -7,226 +7,229 @@
     @-webkit-keyframes fadeOut { from { opacity:1; } to { opacity:0; } }
     @-moz-keyframes fadeOut { from { opacity:1; } to { opacity:0; } }
     @keyframes fadeOut { from { opacity:1; } to { opacity:0; } }
-*/  
+*/
 
 /*GENERAL*/
-      body { 
-        font-family: 'Droid Serif'; 
-        text-align: justify;
-        }
-      h1, h2, h3 {
-        font-family: 'Yanone Kaffeesatz';
-        font-weight: normal;
-        color: rgb(241, 35, 114);
-      }
-      a {
-      color: rgb(79, 165, 198);
-      }
-      code {
-        padding: 0.1em 0.4em;
-        font-size: 85%;
-        border-radius: 3px;
-        background-color: rgba(27,31,35,0.05);
-        border: 1px solid rgb(235, 235, 235);
-        font-family: monospace;
-        color: rgb(40, 41, 35);
-      }
+body {
+    font-family: 'PT Serif';
+    text-align: justify;
+}
+h1,
+h2,
+h3 {
+    font-family: 'Yanone Kaffeesatz';
+    font-weight: normal;
+    color: rgb(241, 35, 114);
+}
+a {
+    color: rgb(79, 165, 198);
+}
+code {
+    padding: 0.1em 0.4em;
+    font-size: 85%;
+    border-radius: 3px;
+    background-color: rgba(27, 31, 35, 0.05);
+    border: 1px solid rgb(235, 235, 235);
+    font-family: monospace;
+    color: rgb(40, 41, 35);
+}
 
 /*REMARK TEMPLATE*/
-      .remark-code, .remark-inline-code { 
-        font-family: 'Ubuntu Mono'; 
-      }
-      .remark-slide-content {
-        background-size: contain;      /* applied using JavaScript only if background-image is larger than slide */ 
-      }
+.remark-code,
+.remark-inline-code {
+    font-family: 'Ubuntu Mono';
+}
+.remark-slide-content {
+    background-size: contain; /* applied using JavaScript only if background-image is larger than slide */
+}
 
 /*DARKSLIDE TEMPLATE*/
-      .darkslide {
-        background-color: rgb(40, 41, 35);
-        color: rgb(204, 204, 204);
-      }
-      .darkslide code {
-        padding: 0.1em 0.4em;
-        font-size: 85%;
-        border-radius: 3px;
-        background-color: lightgrey;
-        border: 1px solid rgb(235, 235, 235);
-      }
-      .darkslide strong {
-        color: rgb(243, 135, 48) !important;
-      }
-      .darkslide.remark-slide-number {
-      	color: white;
-      }
+.darkslide {
+    background-color: rgb(40, 41, 35);
+    color: rgb(204, 204, 204);
+}
+.darkslide code {
+    padding: 0.1em 0.4em;
+    font-size: 85%;
+    border-radius: 3px;
+    background-color: lightgrey;
+    border: 1px solid rgb(235, 235, 235);
+}
+.darkslide strong {
+    color: rgb(243, 135, 48) !important;
+}
+.darkslide.remark-slide-number {
+    color: white;
+}
 
-      
+
 /*SPECIAL TEXT*/
-      .note {            
-        padding: 1.5em;
-        font-size: 85%;
-        border-radius: 3px;
-        background-color: rgba(27,31,35,0.05);
-        border: 2px solid rgb(243, 135, 48);
-        display: block;
-        white-space: normal;
-        text-align: justify;
-      }
-      .question {            
-        padding: 1.5em;
-        font-size: 85%;
-        border-radius: 3px;
-        background-color: rgba(27,31,35,0.05);
-        border: 2px solid rgb(69, 155, 191);
-        display: block;
-        white-space: normal;
-        text-align: justify;
-      }  
-      .warning {            
-        padding: 1.5em;
-        font-size: 85%;
-        border-radius: 3px;
-        background-color: rgba(27,31,35,0.05);
-        border: 2px solid rgb(241, 35, 114);
-        display: block;
-        white-space: normal;
-        text-align: justify;
-      }  
-      .exercise {            
-        padding: 1.5em;
-        font-size: 85%;
-        border-radius: 3px;
-        background-color: rgba(27,31,35,0.05);
-        border: 2px solid rgb(252, 225, 88);
-        display: block;
-        white-space: normal;
-        text-align: justify;
-      }
-      .solution {            
-        padding: 1.5em;
-        font-size: 85%;
-        border-radius: 3px;
-        background-color: rgba(27,31,35,0.05);
-        border: 2px solid rgb(124, 182, 150);
-        display: block;
-        white-space: normal;
-        text-align: justify;
-      }
-      .quote {
-        background-color: rgb(40, 41, 35);
-        color: rgb(231, 219, 116);
-      }
-      .mirror {/*Flip an image or (series of) characters horizontally. Specifically used for turning the right arrow &#10148; into a left arrow (for which there exists no equivalent entity).*/
-        display: inline-block; 
-        -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
-        -moz-transform: matrix(-1, 0, 0, 1, 0, 0);
-        -o-transform: matrix(-1, 0, 0, 1, 0, 0);
-        transform: matrix(-1, 0, 0, 1, 0, 0);
-      }
-      .nonumber .remark-slide-number {/*Hides Slide Numbers*/
-          visibility: hidden;
-      }
+.note {
+    padding: 1.5em;
+    font-size: 85%;
+    border-radius: 3px;
+    background-color: rgba(27, 31, 35, 0.05);
+    border: 2px solid rgb(243, 135, 48);
+    display: block;
+    white-space: normal;
+    text-align: justify;
+}
+.question {
+    padding: 1.5em;
+    font-size: 85%;
+    border-radius: 3px;
+    background-color: rgba(27, 31, 35, 0.05);
+    border: 2px solid rgb(69, 155, 191);
+    display: block;
+    white-space: normal;
+    text-align: justify;
+}
+.warning {
+    padding: 1.5em;
+    font-size: 85%;
+    border-radius: 3px;
+    background-color: rgba(27, 31, 35, 0.05);
+    border: 2px solid rgb(241, 35, 114);
+    display: block;
+    white-space: normal;
+    text-align: justify;
+}
+.exercise {
+    padding: 1.5em;
+    font-size: 85%;
+    border-radius: 3px;
+    background-color: rgba(27, 31, 35, 0.05);
+    border: 2px solid rgb(252, 225, 88);
+    display: block;
+    white-space: normal;
+    text-align: justify;
+}
+.solution {
+    padding: 1.5em;
+    font-size: 85%;
+    border-radius: 3px;
+    background-color: rgba(27, 31, 35, 0.05);
+    border: 2px solid rgb(124, 182, 150);
+    display: block;
+    white-space: normal;
+    text-align: justify;
+}
+.quote {
+    background-color: rgb(40, 41, 35);
+    color: rgb(231, 219, 116);
+}
+.mirror { /*Flip an image or (series of) characters horizontally. Specifically used for turning the right arrow &#10148; into a left arrow (for which there exists no equivalent entity).*/
+    display: inline-block;
+    -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
+    -moz-transform: matrix(-1, 0, 0, 1, 0, 0);
+    -o-transform: matrix(-1, 0, 0, 1, 0, 0);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+.nonumber .remark-slide-number { /*Hides Slide Numbers*/
+    visibility: hidden;
+}
 /*SLIDE LAYOUT*/
-      .columns-2 {/*divides the slide up into two columns*/
-        column-count: 2;
-      }
-      .columns-3 {/*divides the slide up into three columns*/
-        column-count: 3;
-      }
-      .separatecolumn {/*using one of these for each column effectively lets you define break points for each column*/
-        display: inline-block;
-        width: 100%;
-      }
-      .bottomright {/*for adding an image or text in the bottom right corner of the slide*/
-        position: absolute;
-        bottom: 3em;
-        right: 4em;
-      }
-      .bottomleft {/*for adding an image or text in the bottom left corner of the slide*/
-        position: absolute;
-        bottom: 3em;
-        left: 4em;
-      }
-      .topleft {/*for adding an image or text in the top left corner of the slide*/
-        position: absolute;
-        top: 3em;
-        left: 4em;
-      }
-      .topright {/*for adding an image or text in the top right corner of the slide*/
-        position: absolute;
-        top: 3em;
-        right: 4em;
-      }
-      .bottomcenter {/*for adding an image or text that is centered at the bottom of the slide*/
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        margin-right: -50%;
-        transform: translate(-50%, -50%)
-      }
+.columns-2 { /*divides the slide up into two columns*/
+    column-count: 2;
+}
+.columns-3 { /*divides the slide up into three columns*/
+    column-count: 3;
+}
+.separatecolumn { /*using one of these for each column effectively lets you define break points for each column*/
+    display: inline-block;
+    width: 100%;
+}
+.bottomright { /*for adding an image or text in the bottom right corner of the slide*/
+    position: absolute;
+    bottom: 3em;
+    right: 4em;
+}
+.bottomleft { /*for adding an image or text in the bottom left corner of the slide*/
+    position: absolute;
+    bottom: 3em;
+    left: 4em;
+}
+.topleft { /*for adding an image or text in the top left corner of the slide*/
+    position: absolute;
+    top: 3em;
+    left: 4em;
+}
+.topright { /*for adding an image or text in the top right corner of the slide*/
+    position: absolute;
+    top: 3em;
+    right: 4em;
+}
+.bottomcenter { /*for adding an image or text that is centered at the bottom of the slide*/
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
 
 /*TEXT COLORS*/
-      .black {
-        color: rgb(40, 41, 35);
-      }
-      .white {
-        color: white;
-      }
-      .grey{
-        color: rgb(204, 204, 204);
-      }
-      .darkgrey {
-        color: rgb(40, 41, 35);
-      } 
-      .yellow {
-        color: rgb(239, 219, 116);
-      }
-      .red {
-        color: rgb(241, 35, 114);
-      }
-      .orange {
-        color: rgb(243, 135, 48);
-      }
-      .blue {
-        color: rgb(106, 204, 203);
-      }
-      .green {
-        color: rgb(124, 182, 150);
-      }
-      .margins {
-        margin: 1em;
-      }
-      
+.black {
+    color: rgb(40, 41, 35);
+}
+.white {
+    color: white;
+}
+.grey {
+    color: rgb(204, 204, 204);
+}
+.darkgrey {
+    color: rgb(40, 41, 35);
+}
+.yellow {
+    color: rgb(239, 219, 116);
+}
+.red {
+    color: rgb(241, 35, 114);
+}
+.orange {
+    color: rgb(243, 135, 48);
+}
+.blue {
+    color: rgb(106, 204, 203);
+}
+.green {
+    color: rgb(124, 182, 150);
+}
+.margins {
+    margin: 1em;
+}
+
 /*ANIMATIONS*/
-      .fade-in {/*NOT USED YET*/
-        opacity:0;  /* make things invisible upon start */
-        
-        -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
-        -moz-animation:fadeIn ease-in 1;
-        animation:fadeIn ease-in 1;
- 
-        -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
-        -moz-animation-fill-mode:forwards;
-        animation-fill-mode:forwards;
- 
-        -webkit-animation-duration:1s;
-        -moz-animation-duration:1s;
-        animation-duration:1s;
-      }
-      .fade-out {/*NOT USED YET*/
-        opacity:1;  /* make things visible upon start */
-        
-        -webkit-animation:fadeOut ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
-        -moz-animation:fadeOut ease-in 1;
-        animation:fadeOut ease-in 1;
- 
-        -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
-        -moz-animation-fill-mode:forwards;
-        animation-fill-mode:forwards;
- 
-        -webkit-animation-duration:1s;
-        -moz-animation-duration:1s;
-        animation-duration:1s;
-      }
+.fade-in { /*NOT USED YET*/
+    opacity: 0; /* make things invisible upon start */
+
+    -webkit-animation: fadeIn ease-in 1; /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    -moz-animation: fadeIn ease-in 1;
+    animation: fadeIn ease-in 1;
+
+    -webkit-animation-fill-mode: forwards; /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    animation-duration: 1s;
+}
+.fade-out { /*NOT USED YET*/
+    opacity: 1; /* make things visible upon start */
+
+    -webkit-animation: fadeOut ease-in 1; /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    -moz-animation: fadeOut ease-in 1;
+    animation: fadeOut ease-in 1;
+
+    -webkit-animation-fill-mode: forwards; /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    animation-duration: 1s;
+}
 /*FOR DEPTH IN OBJECTS –– NOT USED YET
       .z0{
           position: absolute;
