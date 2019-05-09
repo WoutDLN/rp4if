@@ -77,9 +77,12 @@ You should now see the Apache2 Debian Default Page. On the top of that page, in 
 
 ---
 
+name: contentfolder
+
 ### 5. Viewing our Website
 
 .question[Apache grants external (browser) access only to select folders on your system. Anything more than that would be crazy. **Can you tell why?**]
+
 
 --
 
