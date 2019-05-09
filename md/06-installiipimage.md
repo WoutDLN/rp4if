@@ -26,6 +26,7 @@ For that, we will install a **IIIF-compliant** image server called **IIPImage**.
 .question[**Question:** even if our website didn't have to be IIIF-compliant, what would the benefet be of installing a dedicated image server for your website?]
 
 ---
+name: imgdir
 
 ### 1. Install the IIPImage-Server
 

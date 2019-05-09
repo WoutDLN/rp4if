@@ -134,6 +134,7 @@ code {
 }
 .columns-3 { /*divides the slide up into three columns*/
     column-count: 3;
+
 }
 .separatecolumn { /*using one of these for each column effectively lets you define break points for each column*/
     display: inline-block;

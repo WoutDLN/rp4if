@@ -26,7 +26,6 @@ For this to work, to make the system as fast and efficient as possible, IIPImage
 ]
 
 .separatecolumn[
-
 .center[![UAntwerpen](img/step7/pyramid.svg)]
 ]
 ]
@@ -43,15 +42,93 @@ A multiresolution image, like a Pyramid TIFF, is actually a bunch of different v
 You start with one, **high resolution image**, and you let the computer make a series of **lower resolution copies** of that image. First at half the resolution, then at a quarter, an eight, etc. 
 
 The computer then maps these images onto one another by using **tiles**: it cuts each image in the same number of pieces (_tiles_), and remembers which tile corresponds to which tile on the corresponding level in a different resolution. 
-
-This allows you to quickly move from one level to the next by zooming in an out of the image. And that is exactly the job of an image server like IIPImage: to decide which version of the image the user needs as she is zooming in and out, and to serve them that image quickly and efficiently, on the fly.
 ]
 
 .separatecolumn[
-
 .center[![UAntwerpen](img/step7/pyramid.svg)]
 ]
 ]
+
+---
+
+### Introduction
+
+.columns-2[
+.separatecolumn[
+
+This allows you to **quickly move from one resolution level to the next** by zooming in an out of the image. 
+
+And that is exactly the job of an image server like IIPImage: to **decide which version of the image the user needs** as she is zooming in and out, and to **serve** them that image **quickly and efficiently,** on the fly.
+]
+
+.separatecolumn[
+.center[![UAntwerpen](img/step7/pyramid.svg)]
+]
+]
+---
+
+### 1. Install Image Processor: VIPS
+
+To convert our high-resolution images into Pyramid TIFFs, we will first need to install another package on our RPi – this time we need an **image processor**. There are a couple of different options available for this, but we'll use the software package **VIPS**.
+
+Use `apt-get` to install the package `libvips-tools`:
+
+```bash
+sudo apt-get install libvips-tools
+```
+
+--
+
+### 2. Find Your Images
+
+.exercise[**Exercise:** Change to the folder `/var/www/html/images/`. [At an earlier stage](step4.html#clexp2), we stored two _Frankenstein_ facsimile image in this folder: `image1.png` and `image2.png`. Make sure they are still there using `ls`.
+]
+
+---
+
+### 3. Transform Your Images
+
+To transform these `.png` images into (tiled pyramid) `.tif` images, run the following command:
+
+```bash
+sudo vips im_vips2tiff image1.png image1.tif:deflate,tile:256x256,pyramid
+```
+
+Once you've hit `enter`, wait until the processing is done. This can take several minutes, because Pyramid TIFFs are huge files. 
+
+.exercise[**Exercise:** Once the first image is processed, move on to the second image. Afterwards make sure, both `.tif` files (`image1.tif` and `image2.tif`) are in the folder, alongside to the `.png` files – which should still be there too.]
+
+---
+
+### 4. Copy the Pyramid TIFFs to the Image Server's Data Directory
+
+Just like Apache stores the accessible documents in a specific data directory (`/var/www/html`, see [Step 5](step5.html#contentfolder)), our IIPImage server also has a directory where our images need to be stored. [Earlier](step6.html#imgdir), we've set this directory to `/var/www/iipimage-server/`.
+
+In order to make our images accessible via the image server module (and not only via apache) we have to copy (`cp`) them into this folder. 
+
+```bash
+sudo cp image*.tif ../../iipimage-server/.
+```
+
+--
+
+Have a look at this command and think about the following questions:
+
+.question[
+
+1. Can you think of a reason for using `cp` instead of `mv` here?
+2. Do you see any problems with this approach in a real-life scenario?
+3. How does the command process both images simultaneously?
+3. What kind of a path is `../../iipimage-server/.`?
+4. What is the function of the `.` at the end?
+
+]
+
+---
+
+### 4. Copy the Pyramid TIFFs to the Image Server's Data Directory
+
+.note[**Note:** `../../` only works as long as you are in the /var/www/html/images/ folder. It would not lead to the correct target from any other current working directory. An alternative would be to use an absolute path.]
 
 ---
 
