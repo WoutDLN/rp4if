@@ -128,7 +128,7 @@ Have a look at this command and think about the following questions:
 
 ### 4. Copy the Pyramid TIFFs to the Image Server's Data Directory
 
-.note[**Note:** `../../` only works as long as you are in the /var/www/html/images/ folder. It would not lead to the correct target from any other current working directory. An alternative would be to use an absolute path.]
+.note[**Note:** `../../` only works as long as you are in the `/var/www/html/images/` folder. It would not lead to the correct target from any other `pwd`. An alternative would be to use an [absolute path](commandline.html#relative).]
 
 ---
 
