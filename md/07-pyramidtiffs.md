@@ -15,8 +15,8 @@ name: titleslide
 
 ### Introduction
 
-.columns-2[
-.separatecolumn[
+.flexbox-ltr[
+.boxitem[
 
 IIPImage, [the image server we've now installed on our RPis](step6.html) is an **advanced, high-performance** image server that allows for the web-based streamed viewing of **ultra-high resolution images** – which is exactly what we need. 
 
@@ -24,9 +24,8 @@ This means that (as long as they have a somewhat decent internet connection), ou
 
 For this to work, to make the system as fast and efficient as possible, IIPImage server requires us to load our images in a specific format: a _tiled, multi-resolution_ format. There are a couple of tiled image formats out there, but we will be working with **Pyramid TIFF** images, because it is supported natively by IIPImage. You could also use JPEG2000, but this would require a proprietary codec. 
 ]
-
-.separatecolumn[
-.center[![UAntwerpen](img/step7/pyramid.svg)]
+.boxitem[
+<img src="img/step7/pyramid.svg" width="500px"/>
 ]
 ]
 
@@ -34,8 +33,8 @@ For this to work, to make the system as fast and efficient as possible, IIPImage
 
 ### Introduction
 
-.columns-2[
-.separatecolumn[
+.flexbox-ltr[
+.boxitem[
 
 A multiresolution image, like a Pyramid TIFF, is actually a bunch of different versions (in different resolutions) of the same image, **all stored in a single file**.
 
@@ -44,8 +43,8 @@ You start with one, **high resolution image**, and you let the computer make a s
 The computer then maps these images onto one another by using **tiles**: it cuts each image in the same number of pieces (_tiles_), and remembers which tile corresponds to which tile on the corresponding level in a different resolution. 
 ]
 
-.separatecolumn[
-.center[![UAntwerpen](img/step7/pyramid.svg)]
+.boxitem[
+<img src="img/step7/pyramid.svg" width="500px"/>
 ]
 ]
 
@@ -53,16 +52,16 @@ The computer then maps these images onto one another by using **tiles**: it cuts
 
 ### Introduction
 
-.columns-2[
-.separatecolumn[
+.flexbox-ltr[
+.boxitem[
 
 This allows you to **quickly move from one resolution level to the next** by zooming in an out of the image. 
 
 And that is exactly the job of an image server like IIPImage: to **decide which version of the image the user needs** as she is zooming in and out, and to **serve** them that image **quickly and efficiently,** on the fly.
 ]
 
-.separatecolumn[
-.center[![UAntwerpen](img/step7/pyramid.svg)]
+.boxitem[
+<img src="img/step7/pyramid.svg" width="500px"/>
 ]
 ]
 ---
