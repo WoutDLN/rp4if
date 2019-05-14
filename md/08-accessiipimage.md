@@ -5,13 +5,15 @@ name: titleslide
 
 #.white[Step 8:]
 
-#Accessing Your Images
+#IIIF Parameters
 
 .yellow[Wout Dillen & Joshua Schäuble]
 
 .bottomleft[.mirror[&#10148;] Back to [Step 7](step7.html)]
 
 ---
+
+name: accessmyimg
 
 ## 1. Accessing Images in the Browser
 
@@ -37,8 +39,9 @@ Both `URL`s show you the same image, but not in the same way.
 
 ---
 
-## 2. Experiment with the IIIF Image API
+name: iiifparam
 
+## 2. Experiment with the IIIF Image API
 
 The IIIF consortium provides a detailed [**documentation** of the **IIIF Image API**'s parameters here](http://iiif.io/api/image/2.0/). Have a look at this documentation, and play with different settings for your images by manipulating the `URL` in the following exercise:
 
@@ -78,10 +81,28 @@ When no further IIIF URL variables are specified, the IIPImage server will forwa
 
 ---
 
+name: accessurimg
+
+## 4. Accessing Each Other's Images
+
+So, each of us now has [a fully functioning RPi](step3.html) with [a web server](step5.html) and an [image server](step6.html), that provide access to a couple of [tiled pyramid TIFF images](step7.html) that we have learned to [access and manipulate](step8.html) with the [IIIF URL parameters](step8.html#iiifparam).
+
+And since all of our RPis are [connected on the same network](step1.html), we can use the same technology that allows us to [view](step8.html#accessmyimg) and [manipulate](step8.html) the images on our own RPi in the browser of our own laptops allow us to do the same with each other's images too.
+
+.question[**Question**: Think back about how you accessed your RPi's images on your laptop. What is the variable here? **What would you need to view your neighbour's images on your laptop?**]
+
+--
+
+.exercise[**Exercise:** Ask your neigbour to give you the information you need to **build IIIF compliant URLs for their images**. Then try to view and manipulate their images using the **IIIF parameters**.]
+
+We will need `URL`s like these going forward. So **save some of these URLS on your laptop somewhere** (like a `.txt` or `.doc` file), so you will be able to copy and paste them.
+
+---
+
 class: center, middle, darkslide
 
 #Done!
-.yellow[Move to [Step 9](step9.html) to play around with image interoperability.]
+.yellow[Move to [Step 9](step9.html) to embed your (and your neighbours') inages into your own `html` page.]
 
 .bottomright[[Credits and Copyright](#credits) &#10148;]
 

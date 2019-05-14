@@ -12,32 +12,25 @@ count: false
 * [Command Line Cheat Sheet](cheat.html)
 * [JSON Intro](json.html)
 ]
-.boxitem[.orange[Before We Begin]
+.boxitem[.orange[Introduction]
 * [Course Introduction](intro.html)
 * [Tips for Tutors](tutortips.html)
 * [Tips for Students](studenttips.html)
 ]
-.boxitem[.orange[Tutorial – Fundamentals]
+.boxitem[.orange[Chapter 1 – Setting Up Your Raspberry Pi]
 * Step 1 | [The Network](step1.html)
 * Step 2 | [Double Checking Your RPi](step2.html)
 * Step 3 | [Connect your RPi to the Internet](step3.html)
 * Step 4 | [SSH into your RPi](step4.html)
 ]
-.boxitem[.orange[Tutorial – Web Server]
+.boxitem[.orange[Chapter 2 – Setting Up The Server Farm]
 * Step 5 | [Set Up a Web Server](step5.html)
 * Step 6 | [Set Up an Image Server](step6.html)
 * Step 7 | [Pyramid TIFF Conversion](step7.html)
-* Step 8 | [Accessing Your Images](step8.html)
 ]
-.boxitem[.orange[Tutorial – Image Server]
-* Step 9 | [dummy](step1.html)
-* Step 10 | [dummy](step2.html)
-* Step 11 | [dummy](step3.html)
-* Step 12 | [dummy](step4.html)
-]
-.boxsitem[.orange[Tutorial – IIIF]
-* Step 13 | [dummy](step1.html)
-* Step 14 | [dummy](step2.html)
-* Step 15 | [dummy](step3.html)
+.boxitem[.orange[Chapter 3 – Image Interoperability]
+* Step 8 | [IIIF Parameters](step8.html)
+* Step 9 | [Reusing IIIF Images](step9.html)
+* Step 10 | [Frankenstein](step10.html)
 ]
 ]
