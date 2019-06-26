@@ -35,6 +35,103 @@ In this file, add the following two lines after the `frankenstein.jpg` image:
 
 Save the `index.html` file (hit `Ctrl+o`, then `enter`) and exit `nano` (hit `Ctrl+x`). Then enter your RPi’s IP address in your browser (on the laptop!) again, and look at the effect your changes had on your website.
 
+---
+
+## 2. On Reusing Other Peoples' Images
+
+Now that we have edited the `index.html` file in RPI's `/var/www/html` directory, your self-made web page seamlessly loads from other servers (in this case: your neighbours' RPis). We are all in a small, closed network, where we all know each other We know how we are all reusing these images – images that have been added to this networke server farm for exactly that purpose.
+
+.question[**Question:** Think about what this would mean if we would open this up to the wider internet. Would you like anyone with access to the internet to be able to do this kind of stuff with your own data? Why? Why not?]
+
+--
+
+.note[**Note:** To be clear: **there is nothing illegal about what we are doing here.** We are **not** _stealing_ these images. We are **not** downloading copyrighted materials, and hosting then ourselves to redistributing them. Instead, we are just linking to images that are hosted elsewhere.]  
+
+--
+
+Still, although we don’t steal the image from the other server (we only embed their `URL`s), it seems somehow unfair _not to give the other team proper credit for their work._ 
+
+
+---
+
+## 3. IIIF Manifests
+
+
+So wouldn’t it be nice if we could also **embed additional metadata** about each image (or even an entire collection of images) directly from the server of the image provider? In a computer readable, standardized format? 
+
+This would allow us to give credit where credit is due. And if the original hosts have enriched their images in any way (with dates, transcriptions, annotations, etc.), we might want to reference those, or reuse them in our website in some way too.
+
+--
+
+.note[IIIF provides a solution for this: **IIIF Manifests.** ]
+
+--
+
+A IIIF manifest is a container file (in the `JSON` format), that contains metadata about an image collection as well as the IIIF compliant `URL`s to the contained images.
+
+For now, we will only look at a simple example, in detail we will learn about manifests and IIIF compliant image annotation later.
+
+---
+
+## 3. IIIF Manifests
+
+We want to use an IIIF compliant Image Viewer called **Mirador** to view and join our images. Mirador does not want simple IIIF image `URL`s, but it expects manifest files in order to view images dynamically and including the annotated metadata.
+
+The manifest file is usually provided by the institution that also provides the images. **This means: Each group has to create a manifest file for their image collection now.** 
+
+Luckily we all named our images the same way, so we can all use the same  _dummy manifest_ (without really understanding it - yet). In this dummy manifest we simply change the IP address of the contained URLs to our individual server.
+
+---
+
+## 4. Download A Sample Manifest
+
+Go to the data directory of your apache server:
+
+```bash
+cd /var/www/html/
+```
+
+Use `wget` (a **Terminal** program to download web contents) to download the dummy manifest from Joshua’s private server (yes, this is a _real_ real server):
+
+```bash
+sudo wget http://62.75.186.162/frankenstein.json
+```
+ 
+Then, make sure that the file is in your current working directory by listing the contents using `ls`.
+
+.exercise[**Exercise:** Now, open `frankenstein.json` file with `nano` (don’t forget `sudo`!).]
+
+---
+
+## 5. Adapt the Manifest to Your Needs  
+
+At this point, you don’t have to understand the file you're reading in `nano`. 
+
+.exercise[**Exercise:** Instead, just replace all instances of the string `MY_IP_ADDRESS` with your actual IP Address.] 
+
+.warning[**Warning:** If you make a mistake here, your manifest will not work later. **There should be 10 instances for you to replace.** Go through slowly line by line.] 
+
+--
+
+.exercise[**Exercise:** Go through the file again, looking for the line `"label": "Team [PI Name]",` (line 9). Now, replace the string `[PI NAME]` by **the name of your Raspberry Pi**.]
+
+Once you are done, save (hitting `Ctrl+o`, then `enter`) and exit nano (`Ctrl+x`).
+
+---
+
+## 6. Double Check that the File Loads
+
+Check in the browser if your manifest is publically accessible. Open the laptop browser and enter:
+
+```bash
+your.ip.address/frankenstein.json
+```
+
+The manifest `JSON` file should load in your browser. 
+
+--
+
+.note[**Congratulations!** You are now ready to assemble your piece of the monster!]
 
 ---
 

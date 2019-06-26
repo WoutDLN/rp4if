@@ -159,7 +159,7 @@ This lists all your network settings. In the list, find the entry that starts wi
 
 ---
 
-###8. No more peeking!
+###7. No more peeking!
 Now that we have the IP addresses of our RPis, we can finally access them via SSH, using our laptops. That means we will no longer need to look at its desktop.
 
 **Turn off the monitor that is connected to your RPi**.
