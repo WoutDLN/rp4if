@@ -149,6 +149,8 @@ code {
 .boxitem { /*using one of these for each column effectively lets you define break points for each column*/
     flex: 2 1 auto;
     display: inline-block;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 .bottomright { /*for adding an image or text in the bottom right corner of the slide*/
     position: absolute;

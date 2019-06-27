@@ -10,8 +10,64 @@ class: center, middle, darkslide
 
 ## An Introduction to the Course
 
-In this course, we will be setting up a **local IIIF compatible RPi server farm**. That is quite a mouthful, let's break that up into smaller bits.
+In this course, we will be setting up a **local IIIF compatible RPi server farm**. That is quite a mouthful, let's break that down into smaller bits.
 
+
+---
+
+## An Introduction to the Course
+
+In this course, we will be setting up a local IIIF compatible .red[**RPi**] server farm. That is quite a mouthful, let's break that down into smaller bits.
+
+### 1. Raspberry Pi
+
+.flexbox-ltr[
+.boxitem[
+The Raspberry Pi is a low cost, credit-card sized computer that plugs into a computer monitor or TV, and uses a standard keyboard and mouse. It is a capable little device that enables people of all ages to explore computing, and to learn how to program in languages like Scratch and Python. It’s capable of doing everything you’d expect a desktop computer to do, from browsing the internet and playing high-definition video, to making spreadsheets, word-processing, and playing games. 
+]
+.boxitem[<img src="img/intro/rpi.png" width="500"/>]
+]
+
+---
+
+## An Introduction to the Course
+
+In this course, we will be setting up a local IIIF compatible RPi .red[**server farm**]. That is quite a mouthful, let's break that down into smaller bits.
+
+### 2. Server Farm
+
+.flexbox-ltr[
+.boxitem[
+A server farm or server cluster is a collection of computer servers – usually maintained by an organization to supply server functionality far beyond the capability of a single machine. Server farms often consist of thousands of computers which require a large amount of power to run and to keep cool. At the optimum performance level, a server farm has enormous costs (both financial and environmental) associated with it.]
+
+.boxitem[<img src="img/intro/serverfarm.jpg" width="500"/>]
+]
+
+---
+
+## An Introduction to the Course
+
+In this course, we will be setting up a local IIIF compatible .red[**RPi server farm**]. That is quite a mouthful, let's break that down into smaller bits.
+
+### 3. RPi Server Farm
+
+.flexbox-ltr[
+.boxitem[
+Our Raspberry Pi server farm will work much in the same way: we will connect a bunch of computers (the RPis), and install servers on them that will allow them to communicate with each other. Built on mini-computers, our server farm will obviously have much less computing power than a regular server farm, but this also comes at a much lower cost (also both financial and environmental).]
+.boxitem[<img src="img/intro/rpiserverfarm.png" width="500"/>]
+]
+
+---
+
+### 4. IIIF
+
+---
+
+### 5. IIIF Compatible Server Farm
+
+---
+
+### 6. Local
 
 ---
 
