@@ -148,7 +148,7 @@ This command will show you your routing table: a list of all the system's **rout
 
 --
 name: ip
-###6. Note down your IP Address
+###6. Find down your IP Address
 As we explained in the [introduction](#introduction), we will need the IP address that our router has assigned to our RPi to [SSH into the RPi](step2.html#ssh) via our laptops. We can find the IP address we need by running the following command: 
 
 ```bash
@@ -158,8 +158,16 @@ ifconfig
 This lists all your network settings. In the list, find the entry that starts with `eth0` (typically the first one), and note down the first IP address that you see, the one that directly follows the word `inet`. 
 
 ---
+name: ipshare
 
-###7. No more peeking!
+###7. Share your IP Address With your Tutors
+
+.exercise[
+Your tutors will need your IP addresses later. So please **send them an email** to the email address they provide, with **your RPi's name** in the subject, and **your RPi's IP address** in the message.
+]
+
+--
+###8. No more peeking!
 Now that we have the IP addresses of our RPis, we can finally access them via SSH, using our laptops. That means we will no longer need to look at its desktop.
 
 **Turn off the monitor that is connected to your RPi**.
