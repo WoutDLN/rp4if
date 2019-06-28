@@ -45,7 +45,7 @@ Although we are in a closed network for this course and do not expect any hackin
 
 Go to `Preferences/Raspberry Pi Configuration` again, this time select the tab `System` and set the password to the one provided by your tutor.
 
-If your keyboard layout is not set correctly you will change the password to an unexpected value. This will make the SSH access impossible later. (see [Step 1](#step1)).
+.warning[**Warning:** If your keyboard layout is not set correctly you will change the password to an unexpected value. This will make the SSH access impossible later. (see [Step 1](#step1)).]
 
 --
 
