@@ -64,7 +64,7 @@ Connect your RPi to the following WiFi network: `UA-guest`.
 
 .note[**Note for students:** `UA-guest` is the guest network at the [University of Antwerp](https://www.uantwerpen.be), where this course was first taught. If you are following this course at another institution, your tutor will tell you which WiFi network to connect to instead.]
 
-**Open your browser**. 
+**Open your browser.**.marginicon[<img src="img/icons/browser.png" height="25px"/>] 
 
 .question[Nothing will happen – yet. **Can you guess why**?]
 
@@ -83,7 +83,7 @@ To change this, we will have to change the RPi's priorities, to make sure that i
 
 name: nano
 ###1. Using nano to change files
-**Open a terminal** and enter:
+**Open a terminal**.marginicon[<img src="img/icons/terminal.png" height="25px"/>] and enter:
 ```bash
 sudo nano /etc/dhcpcd.conf
 ```
@@ -120,7 +120,7 @@ Hit `Ctrl+x` to leave `nano`.
 ---
 
 ###3. Reboot your RPi
-To allow these changes to take effect, you will now have to reboot your RPi. We will do this using the terminal:
+To allow these changes to take effect, you will now have to reboot your RPi. We will do this using the **terminal:**.marginicon[<img src="img/icons/terminal.png" height="25px"/>]
 
 ```bash
 sudo reboot now
@@ -129,7 +129,7 @@ sudo reboot now
 --
 
 ###4. Connect the RPi to the WiFi network again
-Open the browser. You should be directed to the university's login page now. This means that assigning the metric values has worked!
+Open the **browser.**.marginicon[<img src="img/icons/browser.png" height="25px"/>] You should be directed to the university's login page now. This means that assigning the metric values has worked!
 
 Each group has received credentials for an account on the guest network. Log in using these access data.
 
@@ -138,7 +138,7 @@ Once you are logged in, visit any website to make sure your internet is connecte
 ---
 
 ###5. Double-check the metric values
-Open a terminal and enter the following command:
+Open a **terminal**.marginicon[<img src="img/icons/terminal.png" height="25px"/>] and enter the following command:
 
 ```bash
 route

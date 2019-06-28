@@ -21,7 +21,7 @@ Your tutors should have already set most of the following steps correctly while 
 
 In real life, servers are rarely located in the same building as you are: probably it is not even in the same country. And often it is just one well hidden rack in a larger server farm. In such cases, you cannot just connect a mouse and a monitor to your server to set it up. Instead, these servers are configured through remote access, as we will practice here.
 
-On your RPi, select the **raspberry icon** in the top left corner, and go to `Preferences/Raspberry Pi Configuration`. Here, select the tab `Interfaces` and ensure, that SSH is `Enabled`.
+On your RPi, select the **raspberry icon** .marginicon[<img src="img/logos/rpi.svg" height="25px"/>] in the top left corner, and go to `Preferences/Raspberry Pi Configuration`. Here, select the tab `Interfaces` and ensure, that SSH is `Enabled`.
 
 ---
 
@@ -50,7 +50,7 @@ Go to `Preferences/Raspberry Pi Configuration` again, this time select the tab `
 --
 
 ###5. Reboot your RPi
-Go to your **terminal**, and enter the following command:
+Go to your **terminal**.marginicon[<img src="img/icons/terminal.png" height="25px"/>], and enter the following command:
 ```bash
 sudo reboot now
 ```

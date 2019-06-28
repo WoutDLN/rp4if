@@ -179,6 +179,11 @@ code {
     margin-right: -50%;
     transform: translate(-50%, -50%)
 }
+.marginicon {
+    position: fixed;
+    left: 30px;
+    height: 25px;
+}
 
 /*TEXT COLORS*/
 .black {
