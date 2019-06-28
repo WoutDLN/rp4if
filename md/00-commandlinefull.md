@@ -18,7 +18,9 @@ class: darkslide
 ##Table of Contents
 
 .flexbox-ltr[
-.boxitem[.orange[Introduction]
+.boxitem[
+### PART 1
+.orange[Introduction]
 1. [What is the Command Line](#what)
 2. [Shell Flavours](#shells)
 
@@ -31,7 +33,9 @@ class: darkslide
 6. [Useful Tips](#tips)
 ]
 
-.boxitem[.orange[Files and folders]
+.boxitem[
+### PART 2
+.orange[Files and folders]
 1. [Make Directories](#mkdir)
 2. [Make Files](#touch)
 3. [Checking Your Progress](#progress)
@@ -41,7 +45,9 @@ class: darkslide
 7. [Move Files](#mv)
 8. [Rename Files](#rename)
 9. [Wildcards](#wildcards)
+]
 
+.boxitem[
 [Exercise](#ex)
 
 [Credits and Copyright](#credits)
@@ -50,6 +56,8 @@ class: darkslide
 ---
 
 class: middle, darkslide
+
+#PART 1
 
 ##Introduction
 
@@ -371,7 +379,17 @@ cd Documents/My_Thesis
 
 ---
 
+class: center, middle, darkslide
+
+#End of Part 1
+
+.yellow[If you are following our RPi-IIIF Tutorial, you are now ready to move on to [Step 3](step3.html) and connect your RPi to the Internet]
+
+---
+
 class: middle, darkslide
+
+# PART 2
 
 ##Files and Folders
 

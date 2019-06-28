@@ -57,9 +57,20 @@ sudo reboot now
 
 ---
 
+
+#Congratulations!
+
+If you had never done anything like this before, you have now successfully entered your very first command in the terminal. 
+
+
+.note[We will be entering more and more commands there in the next steps, so your tutors may want to introduce the first half of our [Short Introduction to Command Line](commandlinefull.html).]
+
+---
+
 class: center, middle, darkslide
 
 #Done!
+
 .yellow[Move to [Step 3](step3.html) to connect your RPi to the internet.]
 
 .bottomright[[Credits and Copyright](#credits) &#10148;]
