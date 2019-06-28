@@ -17,8 +17,8 @@ class: darkslide
 
 ##Table of Contents
 
-.columns-2[
-.separatecolumn[.orange[Introduction]
+.flexbox-ltr[
+.boxitem[.orange[Introduction]
 1. [What is the Command Line](#what)
 2. [Shell Flavours](#shells)
 
@@ -31,7 +31,7 @@ class: darkslide
 6. [Useful Tips](#tips)
 ]
 
-.separatecolumn[.orange[Files and folders]
+.boxitem[.orange[Files and folders]
 1. [Make Directories](#mkdir)
 2. [Make Files](#touch)
 3. [Checking Your Progress](#progress)

@@ -109,6 +109,12 @@ Now you can enter your IP address into the browser of your laptop. If everything
 	sudo cp -r /home/pi/Desktop/html/ /var/www/
 ```]
 ---
+
+### 6. Viewing Each Other's websites
+
+When [your tutors received your RPi's IP addresses](step) earlier, 
+
+---
 class: center, middle, darkslide
 
 #Done!
