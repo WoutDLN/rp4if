@@ -10,14 +10,16 @@ class: center, middle, darkslide
 
 ## An Introduction to the Course
 
-In this course, we will be setting up a **local IIIF compatible RPi server farm**. That is quite a mouthful, let's break that down into smaller bits.
+In this course, we will be setting up a **local IIIF compatible RPi server farm**. 
+
+That is quite a mouthful, let's break that down into smaller bits.
 
 
 ---
 
 ## An Introduction to the Course
 
-In this course, we will be setting up a local IIIF compatible .red[**RPi**] server farm. That is quite a mouthful, let's break that down into smaller bits.
+In this course, we will be setting up a local IIIF compatible .red[**RPi**] server farm. 
 
 ### 1. Raspberry Pi
 
@@ -25,14 +27,14 @@ In this course, we will be setting up a local IIIF compatible .red[**RPi**] serv
 .boxitem[
 The Raspberry Pi is a low cost, credit-card sized computer that plugs into a computer monitor or TV, and uses a standard keyboard and mouse. It is a capable little device that enables people of all ages to explore computing, and to learn how to program in languages like Scratch and Python. It’s capable of doing everything you’d expect a desktop computer to do, from browsing the internet and playing high-definition video, to making spreadsheets, word-processing, and playing games. 
 ]
-.boxitem[<img src="img/intro/rpi.png" width="500"/>]
+.boxitem[<img src="img/logos/rpi.svg" width="250" style="padding-left:125px;padding-right:125px"/>]
 ]
 
 ---
 
 ## An Introduction to the Course
 
-In this course, we will be setting up a local IIIF compatible RPi .red[**server farm**]. That is quite a mouthful, let's break that down into smaller bits.
+In this course, we will be setting up a local IIIF compatible RPi .red[**server farm**]. 
 
 ### 2. Server Farm
 
@@ -47,28 +49,64 @@ A server farm or server cluster is a collection of computer servers – usually 
 
 ## An Introduction to the Course
 
-In this course, we will be setting up a local IIIF compatible .red[**RPi server farm**]. That is quite a mouthful, let's break that down into smaller bits.
+In this course, we will be setting up a local IIIF compatible .red[**RPi server farm**]. 
 
 ### 3. RPi Server Farm
 
 .flexbox-ltr[
 .boxitem[
 Our Raspberry Pi server farm will work much in the same way: we will connect a bunch of computers (the RPis), and install servers on them that will allow them to communicate with each other. Built on mini-computers, our server farm will obviously have much less computing power than a regular server farm, but this also comes at a much lower cost (also both financial and environmental).]
+
 .boxitem[<img src="img/intro/rpiserverfarm.png" width="500"/>]
 ]
 
 ---
 
+## An Introduction to the Course
+
+In this course, we will be setting up a local .red[**IIIF**] compatible RPi server farm. 
+
 ### 4. IIIF
 
+.flexbox-ltr[
+.boxitem[
+The International Image Interoperability Framework (IIIF) provides a standardised method of describing and delivering images over the web, as well as "presentation based metadata (that is, structural metadata) about structured sequences of images. If institutions holding artworks, books, newspapers, manuscripts, maps, scrolls, single sheet collections, and archival materials provide IIIF endpoints for their content, any IIIF-compliant viewer or application can reuse and display both the images and their structural and presentation metadata.
+]
+
+.boxitem[<img src="img/logos/iiif.svg" width="250" style="padding-left:125px;padding-right:125px"/>]
+]
+
 ---
 
-### 5. IIIF Compatible Server Farm
+## An Introduction to the Course
+
+In this course, we will be setting up a local .red[**IIIF compatible RPi server farm**]. 
+
+### 5. A IIIF Compatible RPi Server Farm
+
+.flexbox-ltr[
+.boxitem[
+some text
+]
+
+.boxitem[<img src="img/intro/iiifrpiserverfarm.png" width="500"/>]
+]
 
 ---
 
-### 6. Local
+## An Introduction to the Course
 
+In this course, we will be setting up a .red[**local IIIF compatible RPi server farm**]. 
+
+### 5. A Local IIIF Compatible RPi Server Farm
+
+.flexbox-ltr[
+.boxitem[
+some text
+]
+
+.boxitem[<img src="img/intro/localiiifrpiserverfarm.png" width="500"/>]
+]
 ---
 
 class: center, middle, darkslide

@@ -172,6 +172,9 @@ Now that we have the IP addresses of our RPis, we can finally access them via SS
 
 **Turn off the monitor that is connected to your RPi**.
 
+???
+Tutors: during a break, add these email addresses as links to `md/rpi-iif.md`.
+
 ---
 
 class: center, middle, darkslide

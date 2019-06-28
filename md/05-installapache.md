@@ -79,7 +79,7 @@ You should now see the Apache2 Debian Default Page. On the top of that page, in 
 
 name: contentfolder
 
-### 5. Viewing our Website
+### 5. Viewing Your Website
 
 .question[Apache grants external (browser) access only to select folders on your system. Anything more than that would be crazy. **Can you tell why?**]
 
@@ -97,17 +97,17 @@ Instead of relocating the folder Apache points to, we move our content (those fi
 Copy the `html` folder from the `Desktop` to `/var/www`. Tip: remember that you will also need to copy all **subdirectories** and their contents.]
 
 ---
-### 5. Viewing our Website
-
-.solution[**Solution:**: 
-```bash
-	sudo cp -r /home/pi/Desktop/html/ /var/www/
-```]
+### 5. Viewing Your Website
 
 Now you can enter your IP address into the browser of your laptop. If everything went well, you can load the website from your RPi (which now functions as your server) on your laptop (which funtions as the client). 
 
 .warning[**Warning!** Note that the other people in your network (in this case: this room) can also access your website via their browsers now. If you would be connected to the internet, this could open up your files to the rest of the world.]
 
+???
+.solution[**Solution:** 
+```bash
+	sudo cp -r /home/pi/Desktop/html/ /var/www/
+```]
 ---
 class: center, middle, darkslide
 
