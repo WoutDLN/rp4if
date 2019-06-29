@@ -10,7 +10,8 @@ count: false
 .boxitem[.orange[Computer Skill Crash Course]
 * [Command Line Intro](commandline.html)
 * [Command Line Cheat Sheet](cheat.html)
-* [JSON Intro](json.html)
+* [Intro to JSON](json.html)
+* [Intro to HTML and CSS](webdesign.html)
 ]
 .boxitem[.orange[Introduction]
 * [Course Introduction](intro.html)

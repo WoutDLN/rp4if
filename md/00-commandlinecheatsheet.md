@@ -28,11 +28,7 @@ A simple cheat sheet for some of the most common command line commands to be use
 8. [mv](#mv)
 9. [flags](#-r)
 
-.note[**Note:** These commands are all **bash** commands (Unix shell), that work on **Linux-Based Operating Systems**. 
-
-In this tutorial we will be controling our RPi (which runs on the Linux-Based Operating System ([Raspbian](https://www.raspbian.org)) via [SSH](step2.html#ssh). That means that **these commands will work for us, regardless of the type of computer you use** (Windows, Mac, Linux). 
-
-If you are using this cheat sheet for another purpose, keep in mind that some of these commands will need to be adapted to work on Windows systems.]
+.note[**Note:** These commands are all **bash** commands (Unix shell), that work on **Linux-Based Operating Systems**. In this tutorial we will be controling our RPi (which runs on the Linux-Based Operating System ([Raspbian](https://www.raspbian.org)) via [SSH](step2.html#ssh). That means that **these commands will work for us, regardless of the type of computer you use** (Windows, Mac, Linux). If you are using this cheat sheet for another purpose, keep in mind that some of these commands will need to be adapted to work on Windows systems.]
 
 ---
 

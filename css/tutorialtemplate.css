@@ -144,7 +144,7 @@ code {
     align-items: flex-start;    
     align-content: flex-start;
     flex-wrap: wrap;
-    max-height: 550px;
+    max-height: 500px;
 }
 .boxitem { /*using one of these for each column effectively lets you define break points for each column*/
     flex: 2 1 auto;
