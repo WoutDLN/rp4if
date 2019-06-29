@@ -25,13 +25,13 @@ Or, to freshen up your skills [Command Line Cheat Sheet](cheat.html).]
 
 ###1. SSH Connect
 
-On your laptop (the one that is connected to the `IIIFarm` WiFi) open a [Command Line Interface](commandline.html#what). Here, enter:
+On your laptop (the one that is connected to the `IIIFarm` WiFi) open a [Command Line Interface](commandline.html#what)..marginicon[<img src="img/icons/terminal.png" height="25px"/>] Here, enter:
 
 ```bash
 ssh pi@your.ip.address
 ```
 
-and confirm with enter.
+and confirm with `enter`.
 
 On your first login to a new resource you will get a security warning. Confirm by typing:
 ```bash
@@ -87,9 +87,7 @@ name: html
 
 ###3. Creating a HTML Document in `nano`
 
-.exercise[First, navigate back to the `html` directory on your `Desktop`.]
-
-Now open the `index.html` file with `nano`:
+First, navigate back to the `html` directory on your `Desktop`. Then, open the `index.html` file with `nano`:
 
 ```bash
 nano index.html
@@ -141,7 +139,17 @@ Now you can quickly **switch your RPi's monitor on again**, and use the GUI to n
 
 Unfortunately, this website is **only** accessible **via the browser on your RPi**. It is only saved locally on the RPi, it is not _online_ in our network. In other words, there is no way yet to access this `index.html` file from a browser **on your laptop**.
 
-To make our materials accessible to other devices in our network **via the browser** (rather than via the command line), we will now need to set up a web server environment on the RPi. 
+To make our materials accessible to other devices in our network **via the browser** (rather than via the command line), we will need to set up a web server environment on the RPi. 
+
+--
+
+## 5. Prettyfying Your `html` page
+
+But first, let's see if we can't make the web page we're working on a little better to look at. 
+
+Your tutors will now give you [a short introduction to `html` and `css`](websites.html) that include some exercises.
+
+
 
 ---
 class: center, middle, darkslide

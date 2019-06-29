@@ -60,7 +60,7 @@ In other words: every time a RPi would connect to the internet, another RPi woul
 
 Since your RPi's ethernet interface is already in use (to support our local RPi network), we can only **connect our RPi to the internet via WiFi**.  
 
-Connect your RPi to the following WiFi network: `UA-guest`. 
+Connect your RPi to the following WiFi network: `UA-guest`..marginicon[<img src="img/icons/wifi.png" height="25px"/>] 
 
 .note[**Note for students:** `UA-guest` is the guest network at the [University of Antwerp](https://www.uantwerpen.be), where this course was first taught. If you are following this course at another institution, your tutor will tell you which WiFi network to connect to instead.]
 

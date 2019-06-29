@@ -28,14 +28,14 @@ On your RPi, select the **raspberry icon** .marginicon[<img src="img/logos/rpi.s
 ###2. Ensure that the keyboard layout is set to Belgian
 Until we will be able to SSH into our RPis, we will need to use the keyboard.
 
-Go to `Preferences/Mouse and Keyboard Settings`, select the tab `Keyboard` and there the button `Keyboard Layout`. Select the layout of the keyboard you are using, in our case `Belgium/Belgian`.
+Go back to `Preferences/Mouse and Keyboard Settings`,.marginicon[<img src="img/logos/rpi.svg" height="25px"/>] select the tab `Keyboard` and there the button `Keyboard Layout`. Select the layout of the keyboard you are using, in our case `Belgium/Belgian`.
 
 --
 
 ###3. Ensure that the system language is set to English
-We want all RPis to be operated in English.
+We want to make sure all RPis are operated in English.
 
-Go to `Preferences/Raspberry Pi Configuration` again, this time select the tab `Localisation`. Click on `Set Locale` and make sure the `Language` is set to `English` and the `Character Set` is `UTF-8`.
+Go to `Preferences/Raspberry Pi Configuration` again,.marginicon[<img src="img/logos/rpi.svg" height="25px"/>] this time select the tab `Localisation`. Click on `Set Locale` and make sure the `Language` is set to `English` and the `Character Set` is `UTF-8`.
 
 ---
 
@@ -43,7 +43,7 @@ name: pw
 ###4. Set the System Password
 Although we are in a closed network for this course and do not expect any hacking attempts, **it is always good practice to change your RPi's password.** Especially when SSH is enabled, changing the default password (`raspberry`) will **prevent others from accessing and controlling your computer without your knowledge**.
 
-Go to `Preferences/Raspberry Pi Configuration` again, this time select the tab `System` and set the password to the one provided by your tutor.
+Go back to `Preferences/Raspberry Pi Configuration`,.marginicon[<img src="img/logos/rpi.svg" height="25px"/>] this time select the tab `System` and set the password to the one provided by your tutor.
 
 .warning[**Warning:** If your keyboard layout is not set correctly you will change the password to an unexpected value. This will make the SSH access impossible later. (see [Step 1](#step1)).]
 
