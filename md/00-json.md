@@ -2,9 +2,9 @@ class: center, middle, darkslide
 
 .topleft[[RPi-IIIF Tutorials](index.html)] 
 
-#.white[Step 1:]
+#.white[Computer Skill Crash Course:]
 
-#The Network
+#A Short Introduction to JSON
 
 .yellow[Wout Dillen & Joshua Schäuble]
 
@@ -22,7 +22,7 @@ class: center, middle, darkslide
 
 #Done!
 
-.yellow[Move to [Step 2](step2.html) to double-check your RPi.]
+.yellow[Move to [Step 9](step9.html) to learn more about interoperability.]
 
 .bottomright[[Credits and Copyright](#credits) &#10148;]
 
