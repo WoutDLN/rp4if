@@ -17,7 +17,7 @@ class: darkslide, middle, center
 
 .note.center[We will now start to control our RPi from a different system (your laptop) using the **command line.** At several points in this tutorial, you will be asked to **write your own commands.**
 
-So now would be the time to dig into the second part of  our [Short Introduction to the Command Line](commandline.html). 
+So now would be the time to dig into the second part of  our [Short Introduction to the Command Line](commandline.html#part2). 
 
 Or, to freshen up your skills [Command Line Cheat Sheet](cheat.html).]
 
