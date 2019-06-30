@@ -12,7 +12,134 @@ class: center, middle, darkslide
 
 ---
 
+### 1. `HTML`
+
+So we have a piece of `html` code that we wrote for each of our institution’s webpages.
+
+`HTML` stands for **HyperText Markup Language,** and it’s a language for building 'hypertexts' – or webpages.
+
+#### `HTML`
+```html
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>My Institution's Page</title>
+    </head>
+    <body>
+        <h1>Welcome to [your_RPi_name]</h1>
+        <p>See our beautiful pieces of the Monster:</p>
+        <img src="images/frankenstein.jpg" style="width:300px;" />
+    </body>
+</html>
+```
+
+
 ---
+
+### 1. `HTML`
+
+`HTML` is a type of `XML` – which stands for **eXtensible Markup Language**. `XML` provides a basic syntax (the way in which the language is written) that allow for an infinite number of markup languages. Other, standardized types of XML are **ALTO-XML** (for OCR) and **TEI-XML** (for text encoding). 
+ 
+
+#### `ALTO-XML`
+```html
+<alto>
+	<Description>
+		<MeasurementUnit/>
+		<sourceImageInformation/>
+		<Processing/>
+	</Description>
+	<Styles>
+		<TextStyle/>
+		<ParagraphStyle/>
+	</Styles>
+	<Layout>
+		<Page>
+          <TopMargin/>
+          <LeftMargin/>
+          <RightMargin/>
+          <BottomMargin/>
+          <PrintSpace/>
+		</Page>
+	</Layout>
+</alto>
+```
+
+---
+
+### 1. `HTML`
+
+`HTML` is a type of `XML` – which stands for **eXtensible Markup Language**. `XML` provides a basic syntax (the way in which the language is written) that allow for an infinite number of markup languages. Other, standardized types of XML are **ALTO-XML** (for OCR) and **TEI-XML** (for text encoding). 
+
+#### `TEI-XML`
+```html
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Title</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <p>Some text here.</p>
+      </body>
+  </text>
+</TEI>
+```
+
+---
+
+### 1. `HTML`
+
+`HTML` is a type of `XML` – which stands for **eXtensible Markup Language**. `XML` provides a basic syntax (the way in which the language is written) that allow for an infinite number of markup languages. Other, standardized types of XML are **ALTO-XML** (for OCR) and **TEI-XML** (for text encoding). 
+
+#### `HTML`
+```html
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>My Institution's Page</title>
+    </head>
+    <body>
+        <h1>Welcome to [your_RPi_name]</h1>
+        <p>See our beautiful pieces of the Monster:</p>
+        <img src="images/frankenstein.jpg" style="width:300px;" />
+    </body>
+</html>
+```
+
+---
+
+
+### 1. `HTML`
+
+.exercise[Have a closer look at our `html` excerpt. **Can you figure out how `xml` is structured?**] 
+
+#### `HTML`
+```html
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>My Institution's Page</title>
+    </head>
+    <body>
+        <h1>Welcome to [your_RPi_name]</h1>
+        <p>See our beautiful pieces of the Monster:</p>
+        <img src="images/frankenstein.jpg" style="width:300px;" />
+    </body>
+</html>
+```
+
+---
+
 
 class: center, middle, darkslide
 
