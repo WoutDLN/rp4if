@@ -86,7 +86,7 @@ In this course, we will be setting up a local .red[**IIIF compatible RPi server 
 
 .flexbox-ltr[
 .boxitem[
-some text
+This basically means, that all of the image servers we'll be setting up on the RPis, will be IIIF compatible, so that all the images we deposit in the servers will be able to make use of all the benefits IIIF has to offer.
 ]
 
 .boxitem[<img src="img/intro/iiifrpiserverfarm.png" width="500"/>]
@@ -98,15 +98,63 @@ some text
 
 In this course, we will be setting up a .red[**local IIIF compatible RPi server farm**]. 
 
-### 5. A Local IIIF Compatible RPi Server Farm
+### 6. A Local IIIF Compatible RPi Server Farm
 
 .flexbox-ltr[
 .boxitem[
-some text
-]
+This means that the network of RPis we'll be setting up, will not be connected to the internet. And that, unlike in a real-world scenario, we won't be able to share our images with the rest of the world, but only with each other. 
+
+We'll go into the reasons for why we decided on a local network later on in this course. For now, we just want to say that while this step is essential for _our_ specific setup, it's not an essential step in the tutorial. So if you want to set up your own RPi with a IIIF compatible image server after the course, to share your own images with the rest of the world, you can still use this tutorial.]
 
 .boxitem[<img src="img/intro/localiiifrpiserverfarm.png" width="500"/>]
 ]
+---
+
+## An Introduction to the Course
+
+### 7. Course Setup
+
+So what will we be doing with this local IIIF compatible RPi server farm? 
+
+--
+
+1. We will divide you up into teams.
+
+--
+
+2. Each team will receive a RPi.
+
+--
+
+3. Each RPi will represent one institution.
+
+--
+
+4. Each institution will have its own image server.
+
+--
+
+5. Each image server will host a couple of images.
+
+--
+
+6. These images are digital reproductions of Mary Shelley's manuscript for _Frankenstein_.
+
+--
+
+7. In the end, we will share these images with each other, and mix them together through the power of IIIF.
+
+---
+
+background-image: url(img/intro/frankenpi.jpg)
+
+## An Introduction to the Course
+
+### 7. Course Setup
+
+.bottomcenter[So basically we'll be assembling our own little Monsters of Frankenstein!]
+
+
 ---
 
 class: center, middle, darkslide
