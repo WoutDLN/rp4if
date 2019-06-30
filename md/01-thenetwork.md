@@ -12,7 +12,9 @@ class: center, middle, darkslide
 
 ---
 
-Needs Work
+class: center, middle
+
+This part of the tutorial is currently instructed by means of Google Slides.
 
 ---
 
