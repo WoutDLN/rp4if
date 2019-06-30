@@ -63,7 +63,7 @@ sudo reboot now
 If you had never done anything like this before, you have now successfully entered your very first command in the terminal. 
 
 
-.note[We will be entering more and more commands there in the next steps, so your tutors may want to introduce the first half of our [Short Introduction to Command Line](commandlinefull.html).]
+.note[We will be entering more and more commands there in the next steps, so your tutors may want to introduce the first half of our [Short Introduction to Command Line](commandline.html).]
 
 ---
 

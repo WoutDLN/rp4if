@@ -57,6 +57,8 @@ class: center, middle, darkslide
 
 .yellow[The last exercise of [Step 4](step4.html) introduces HTML. You can easily expand on this exercise, and let them build a nice web-page around their `frankenstein.jpg` image. We are working on another crash course tutorial that does just that.]
 
+---
+
 class: center, middle, darkslide
 
 #Done!
