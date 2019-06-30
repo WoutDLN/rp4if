@@ -18,7 +18,7 @@ class: center, middle, darkslide
 
 #Done!
 
-.yellow[When you're satisfied with how your web pages look, you're ready to learn how to [install a web server on your RPi](step4.html).]
+.yellow[When you're satisfied with how your web pages look, you're ready to learn how to [install a web server on your RPi](step5.html).]
 
 .bottomright[[Credits and Copyright](#credits) &#10148;]
 
