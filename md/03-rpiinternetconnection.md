@@ -38,7 +38,56 @@ class: center, middle, darkslide
 
 #AP Isolation
 
-.yellow[To learn more about AP Isolation, and why it forced us to come up with a more creative solution for communicating with our Raspberry Pis via SSH, please watch [this video](youtubelink).] 
+Let's have a quick look at what AP Isolation is, exactly, and why it forced us to come up with a more creative solution for communicating with our Raspberry Pis via SSH.
+
+---
+
+background-image: url(img/step3/apisolation01.png) 
+
+---
+background-image: url(img/step3/apisolation02.png) 
+
+---
+background-image: url(img/step3/apisolation03.png) 
+
+---
+background-image: url(img/step3/apisolation04.png) 
+
+---
+background-image: url(img/step3/apisolation05.png) 
+
+---
+background-image: url(img/step3/apisolation06.png) 
+
+---
+background-image: url(img/step3/apisolation07.png) 
+
+---
+background-image: url(img/step3/apisolation08.png) 
+
+---
+background-image: url(img/step3/apisolation09.png) 
+
+---
+background-image: url(img/step3/apisolation10.png) 
+
+---
+background-image: url(img/step3/apisolation11.png) 
+
+---
+background-image: url(img/step3/apisolation12.png) 
+
+---
+background-image: url(img/step3/apisolation13.png) 
+
+---
+background-image: url(img/step3/apisolation14.png) 
+
+---
+background-image: url(img/step3/apisolation15.png) 
+
+---
+background-image: url(img/step3/apisolation16.png) 
 
 ---
 
