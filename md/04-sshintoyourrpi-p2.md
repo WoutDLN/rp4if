@@ -1,124 +1,85 @@
 class: center, middle, darkslide
+name: titleslide
 
 .topleft[[RPi-IIIF Tutorials](index.html)] 
 
-#.white[First Things First:]
+#.white[Step 4:]
 
-#Tips for Students
+#SSH into your RPi
+
+### Part 2
 
 .yellow[Wout Dillen & Joshua Schäuble]
 
----
-
-class: center, middle, darkslide
-#1. All CABLES must be connected (and working)
-
+.bottomleft[.mirror[&#10148;] Back to [Step 3](step3.html)]
 
 ---
 
-class: center, middle, darkslide
-#2. Computers are case sensitive! So is command line!
+name: html
 
+###3. Creating a HTML Document in `nano`
+
+First, navigate back to the `html` directory on your `Desktop`. Then, open the `index.html` file with `nano`:
+
+```bash
+nano index.html
+```
+
+Now you can use the command line text editor [nano](step3.html#nano) to write the following code into the file:
+
+```html
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>My Institution's Page</title>
+    </head>
+    <body>
+        <h1>Welcome to [your_RPi_name]</h1>
+        <p>See our beautiful pieces of the Monster:</p>
+        <img src="images/frankenstein.jpg" style="width:300px;" />
+    </body>
+</html>
+```
+
+.question[Take a closer look at the code. **Can you figure out what it does?**]
+
+???
+```bash
+cd /home/pi/Desktop/html
+```
+---
+
+###3. Creating a HTML Document in `nano`
+
+The code we just wrote  in `nano` is written in a language that your browser can read: `html`. This means that if you open it in your browser, it will display the document _as if_ it were an online web-page. 
+
+In the code, the following line will load an image from your `html/images` directory, and resize it to a `width` of `300px` in your browser:
+
+```html        
+<img src="images/frankenstein.jpg" style="width:300px;" />
+```
+
+.question[Notice that we are using the `.jpg` image for our webpage, not the `.png` images. **Why could using the** `.png` **images be a bad idea?**]
+
+When you're satisfied that the file is copied correctly into your command line through `nano`, save the file with `Ctrl+o`, and quit `nano` with `Ctrl+x`.
 
 ---
 
-class: center, middle, darkslide
-#3. Spaces are meaningful, copy them correctly
+###4. Local vs. Online Webpages.
 
----
+Now you can quickly **switch your RPi's monitor on again**, and use the GUI to navigate into the `html` folder on your `Desktop`, and double-click the `index.html` file. This will open the file in your browser. You should now see the webpage we created, with some text, and the `frankenstein.jpg` image from your `images` embedded into it.
 
-class: center, middle, darkslide
-#4. Always know where you are, and where the files and folders you need are 
+Unfortunately, this website is **only** accessible **via the browser on your RPi**. It is only saved locally on the RPi, it is not _online_ in our network. In other words, there is no way yet to access this `index.html` file from a browser **on your laptop**.
 
-
----
-
-class: center, middle, darkslide
-#5. `/home/pi/Desktop/frankenpi`
-
-
----
-
-class: center, middle, darkslide
-#6. You can always check where you are using `pwd`, and check what is inside using `ls`
-
-
-
----
-
-class: center, middle, darkslide
-#7. The RPi's "Home Directory" is `/home/pi`
-
-
-
----
-
-class: center, middle, darkslide
-#8. You can always return to this directory with `cd + enter`
-
-
-
----
-
-class: center, middle, darkslide
-#9. You can move "yourself" (your `pwd`) using `cd`
-
-
-
----
-
-class: center, middle, darkslide
-#10. You can move or copy files and folders using `mv` and `cp`
-
-
-
----
-
-class: center, middle, darkslide
-#11. When you move yourself, you only need to type in your destination
+To make our materials accessible to other devices in our network **via the browser** (rather than via the command line), we will need to set up a web server environment on the RPi. 
 
 
 
 ---
-
-class: center, middle, darkslide
-#12. When you move or copy files or folders, you always specify "from" and "to"
-
-
-
----
-
-class: center, middle, darkslide
-#13. You specify this using paths
-
-
-
----
-
-class: center, middle, darkslide
-#14. Paths can be relative (to your present location) or absolute (from the root)
-
-
-
----
-
-
-class: center, middle, darkslide
-#15. Absolute paths always start with a slash
-
----
-
-class: center, middle,
-
-🚧 More tips may follow towards the end of the course. 🚧
-
----
-
 class: center, middle, darkslide
 
 #Done!
-
-.yellow[Go to [the tutorial](index.html)]
+.yellow[Move to [Step 5](step5.html) to set up a web server environment on the RPi.]
 
 .bottomright[[Credits and Copyright](#credits) &#10148;]
 

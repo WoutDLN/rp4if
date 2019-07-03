@@ -36,9 +36,9 @@ So we have a piece of `html` code that we wrote for each of our institution’s 
 
 ---
 
-### 1. `HTML`
+### `XML`
 
-`HTML` is a type of `XML` – which stands for **eXtensible Markup Language**. `XML` provides a basic syntax (the way in which the language is written) that allow for an infinite number of markup languages. Other, standardized types of XML are **ALTO-XML** (for OCR) and **TEI-XML** (for text encoding). 
+`XML` stands for **eXtensible Markup Language**. `XML` provides a basic syntax (the way in which the language is written) that allow for an infinite number of markup languages. Other, standardized types of XML are **ALTO-XML** (for OCR) and **TEI-XML** (for text encoding). 
  
 
 #### `ALTO-XML`
@@ -67,9 +67,9 @@ So we have a piece of `html` code that we wrote for each of our institution’s 
 
 ---
 
-### 1. `HTML`
+### `XML`
 
-`HTML` is a type of `XML` – which stands for **eXtensible Markup Language**. `XML` provides a basic syntax (the way in which the language is written) that allow for an infinite number of markup languages. Other, standardized types of XML are **ALTO-XML** (for OCR) and **TEI-XML** (for text encoding). 
+`XML` stands for **eXtensible Markup Language**. `XML` provides a basic syntax (the way in which the language is written) that allow for an infinite number of markup languages. Other, standardized types of XML are **ALTO-XML** (for OCR) and **TEI-XML** (for text encoding). 
 
 #### `TEI-XML`
 ```html
@@ -97,9 +97,9 @@ So we have a piece of `html` code that we wrote for each of our institution’s 
 
 ---
 
-### 1. `HTML`
+### `XML`
 
-`HTML` is a type of `XML` – which stands for **eXtensible Markup Language**. `XML` provides a basic syntax (the way in which the language is written) that allow for an infinite number of markup languages. Other, standardized types of XML are **ALTO-XML** (for OCR) and **TEI-XML** (for text encoding). 
+`XML` stands for **eXtensible Markup Language**. `XML` provides a basic syntax (the way in which the language is written) that allow for an infinite number of markup languages. Other, standardized types of XML are **ALTO-XML** (for OCR) and **TEI-XML** (for text encoding). 
 
 #### `HTML`
 ```html

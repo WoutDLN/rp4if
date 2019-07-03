@@ -19,7 +19,7 @@ In [the previous step](step4.html#html), we have created a document that a brows
 
 That `html` is a markup language explains why it is structured with so many angled brackets (like `<html>` for example). But we won't go into that here. What's more important for us now, is that this document is a **hypertext** – a text that is potentially linked with other text, through what are called **hyperlinks**. This is basically how the internet functions. When you visit a **site**, you arrive on a specific **page** (typically the homepage) that contains a small part of all the site's information. This information is distributed among a series of such pages, that you can navigate to (or **browse**) by clicking on the many **links** between the pages. Each of these pages is typically an individual `html` document.
 
-We visit these pages through use our **browser** (Firefox, Chrome, Safari, Internet Explorer, etc.). As the word _visit_ suggests, these pages are typically not stored locally, but elsewhere – on a faraway server in an undisclosed location. To be able to communicate with these servers, the browser uses `HTTP`, or **HyperText Transfer Protocol**. That is why the links of web pages usually start with `http://` (even though at first sight most modern browsers hide this information from the address bar). 
+We visit these pages through our **browser** (Firefox, Chrome, Safari, Internet Explorer, etc.). As the word _visit_ suggests, these pages are typically not stored locally, but elsewhere – on a faraway server in an undisclosed location. To be able to communicate with these servers, the browser uses `HTTP`, or **HyperText Transfer Protocol**. That is why the links of web pages usually start with `http://` (even though at first sight most modern browsers hide this information from the address bar). 
 
 In this act of communication, a _request_ is sent by the **client**, typically a browser – an application that you host on your computer. And the _response_ is sent by an application hosted on another computer – typically a **web server**: an application that serves web pages to browsers. It is this type of application that we will now be setting up on our RPi, so the browsers inside of our network can access the web pages on our RPis. 
 
@@ -81,7 +81,7 @@ name: contentfolder
 
 ### 5. Viewing Your Website
 
-.question[Apache grants external (browser) access only to select folders on your system. Anything more than that would be crazy. **Can you tell why?**]
+.question[Apache grants external (browser) access only to selected folders on your system. Anything more than that would be crazy. **Can you tell why?**]
 
 
 --

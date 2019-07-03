@@ -45,7 +45,7 @@ Now that we have edited the `index.html` file in RPI's `/var/www/html` directory
 
 --
 
-.note[**Note:** To be clear: **there is nothing illegal about what we are doing here.** We are **not** _stealing_ these images. We are **not** downloading copyrighted materials, and hosting then ourselves to redistributing them. Instead, we are just linking to images that are hosted elsewhere.]  
+.note[**Note:** To be clear: **there is nothing illegal about what we are doing here.** We are **not** _stealing_ these images. We are **not** downloading copyrighted materials, and hosting them ourselves to redistributing them. Instead, we are just linking to images that are hosted elsewhere.]  
 
 --
 

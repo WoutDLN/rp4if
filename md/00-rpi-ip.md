@@ -2,27 +2,27 @@
 
 .flexbox-ltr[
 .boxitem[
-- americanpi			<!--|	[ipadress]-->
-- applepi				<!--|	[ipadress]-->
-- apricotpi			<!--|	[ipadress]-->
-- banoffeepi			<!--|	[ipadress]-->
-- blueberrypi			<!--|	[ipadress]-->
-- cherrypi			<!--|	[ipadress]-->
-- chickenpotpi		<!--|	[ipadress]-->
-- chocolatepi			<!--|	[ipadress]-->
-- cloudberry			<!--|	[ipadress]-->
-- frankenpi			<!--|	[ipadress]-->
+- [americanpi](192.168.0.193)			<!--|	[192.168.0.193]-->
+- [applepi](192.168.0.192)				<!--|	[192.168.0.192]-->
+<!--- apricotpi			|	[]-->
+<!--- banoffeepi			|	[]-->
+- [blueberrypi](192.168.0.165)			<!--|	[192.168.0.165]-->
+- [cherrypi](192.168.0.179)			<!--|	[192.168.0.179]-->
+- [chickenpotpi](192.168.0.187)		<!--|	[192.168.0.187]-->
+<!--- chocolatepi			|	[]-->
+<!--- cloudberry			<!--|	[192.168.0.193]-->
+- [frankenpi](192.168.0.248)			<!--|	[192.168.0.248]-->
 ]
 .boxitem[
-- honeypi				<!--|	[ipadress]-->
-- humblepi			<!--|	[ipadress]-->
-- imurhuckleberrypi	<!--|	[ipadress]-->
-- lifeofpi			<!--|	[ipadress]-->
-- magpi				<!--|	[ipadress]-->
-- mudpi				<!--|	[ipadress]-->
-- raspberrypi			<!--|	[ipadress]-->
-- shepherdspi			<!--|	[ipadress]-->
-- strawberrypi		<!--|	[ipadress]-->
-- sweetypi			<!--|	[ipadress]-->
-- tweetypi			<!--|	[ipadress]-->
+- [honeypi](192.168.0.148)				<!--|	[192.168.0.148]-->
+- [humblepi](192.168.0.112)			<!--|	[192.168.0.112]-->
+<!--- imurhuckleberrypi	<!--|	[192.168.0.193]-->
+- [lifeofpi](192.168.0.243)			<!--|	[192.168.0.243]-->
+- [magpi](192.168.0.144)				<!--|	[192.168.0.144]-->
+<!--- mudpi				<!--|	[192.168.0.193]-->
+<!--- raspberrypi			<!--|	[192.168.0.193]-->
+- [shepherdspi](192.168.0.108)			<!--|	[192.168.0.108]-->
+- [strawberrypi](192.168.0.178)		<!--|	[192.168.0.178]-->
+<!--- sweetypi			<!--|	[192.168.0.193]-->
+- [tweetypi](192.168.0.212)			<!--|	[192.168.0.212]-->
 ]]

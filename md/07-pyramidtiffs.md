@@ -80,7 +80,7 @@ sudo apt-get install libvips-tools
 
 ### 2. Find Your Images
 
-.exercise[**Exercise:** Change to the folder `/var/www/html/images/`. [At an earlier stage](step4.html#clexp2), we stored two _Frankenstein_ facsimile image in this folder: `image1.png` and `image2.png`. Make sure they are still there using `ls`.
+.exercise[**Exercise:** Change to the folder `/var/www/html/images/`. [At an earlier stage](step4.html#clexp2), we stored two _Frankenstein_ facsimile images in this folder: `image1.png` and `image2.png`. Make sure they are still there using `ls`.
 ]
 
 ---

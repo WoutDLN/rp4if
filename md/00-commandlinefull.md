@@ -623,11 +623,11 @@ class: darkslide
 1. First, move to your `Desktop`.
 2. Once you are there, create a new directory with your name on it (e.g. `wout`).
 3. Once you're done, move to the `Downloads` folder in your RPi, and wait for your team members to reach this step.
-4. Have **one of your team members** download a folder into this directory using the following command: <br/> `wget http://www.woutdillen.be/gutenberg.tar.gz.` This is a compressed folder.
-5. Once the file is downloaded, **the other team member** extracts the `gutenberg` directory from the compressed folder using `tar -xzf gutenberg.tar.gz`.
+4. Have **one of your team members** download a folder into this directory using the following command: <br/> `wget http://www.woutdillen.be/gutenberg.tar.gz` <br/> This is a compressed folder.
+5. Once the file is downloaded, **the other team member** extracts the `gutenberg` directory from the compressed folder using `tar -xzf gutenberg.tar.gz`
 6. Each member of your team copies (don't move!) the `gutenberg` directory from  `Downloads` into your own folder on the `Desktop` (e.g. `Desktop/wout`).
 6. Inside your own folder, you each create two new directories: `austen` and `dickens`.
-5. Copy the Austen books under `Desktop/wout/gutenberg` to `Desktop/wout/austen` and copy the Dickens novels in PDF to `Desktop/wout/dickens`. For this, **you can only use two copy commands** (i.e. one per author), relying only on the difference in **extension** for each author.
+5. Copy the Austen books under `Desktop/wout/gutenberg` to `Desktop/wout/austen` and copy the Dickens novels in EPUB to `Desktop/wout/dickens`. For this, **you can only use two copy commands** (i.e. one per author), relying only on the difference in **extension** for each author.
 6. Remove the `gutenberg` folder and all of its contents.
 7. Inspect the contents on one of the Austen text files, using the `ls` command followed by the path to the file.
 
