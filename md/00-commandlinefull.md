@@ -1,7 +1,7 @@
 class: center, middle, darkslide
 name: titleslide
 
-.topleft[[RPi-IIIF Tutorials](index.html)] 
+.topleft[[RPi-IIIF Tutorials](index.html)]
 
 #.white[Computer Skill Crash Course:]
 
@@ -75,8 +75,8 @@ name: what
 
 **Command-line Interface** (CLI)
 
-* Interact with the computer directly 
-	
+* Interact with the computer directly
+
 	⇒ Typing commands into a minimalistic console such as “PowerShell” (Windows) or “terminal” (MAC)
 
 ---
@@ -90,7 +90,7 @@ name: what
 * Many scientific programmes don’t have a GUI (demands development time and processing power)
 * Indispensable to install, manage, maintain advanced tools and software
 
-**Disadvantages** of command line shells over graphical user interfaces include: 
+**Disadvantages** of command line shells over graphical user interfaces include:
 
 * With great power comes great responsibility
 * Learning curve
@@ -114,9 +114,9 @@ name: shells
 
 ###2. 	Shell Flavours
 
-.note[**Note:** These commands are all **bash** commands (Unix shell), that work on **Linux-Based Operating Systems**. 
+.note[**Note:** These commands are all **bash** commands (Unix shell), that work on **Linux-Based Operating Systems**.
 
-In this tutorial we will be controling our RPi (which runs on the Linux-Based Operating System ([Raspbian](https://www.raspbian.org)) via [SSH](step2.html#ssh). That means that **these commands will work for us, regardless of the type of computer you use** (Windows, Mac, Linux). 
+In this tutorial we will be controling our RPi (which runs on the Linux-Based Operating System ([Raspbian](https://www.raspbian.org)) via [SSH](step2.html#ssh). That means that **these commands will work for us, regardless of the type of computer you use** (Windows, Mac, Linux).
 
 If you are using this tutorial for another purpose, keep in mind that some of these commands will need to be adapted to work on Windows systems.]
 
@@ -132,9 +132,9 @@ name: paths
 
 ###1. Paths
 
-All the data on your computer are organized in what is called a **file system**: a system that controls how the data on your computer is **stored** and **retreived**. And the organizing principle of this file system is that of a **tree structure**. 
+All the data on your computer are organized in what is called a **file system**: a system that controls how the data on your computer is **stored** and **retreived**. And the organizing principle of this file system is that of a **tree structure**.
 
-There is a **root directory** – the starting point of all the data stored on your hard drive – that contains more **directories** (usually named and/or visualized as *folders* in your operating system) and **files** (like an image, a textfile, a Word document, a PDF, a script, etc.). 
+There is a **root directory** – the starting point of all the data stored on your hard drive – that contains more **directories** (usually named and/or visualized as *folders* in your operating system) and **files** (like an image, a textfile, a Word document, a PDF, a script, etc.).
 
 By creating more and more directories within directories, your file system starts to branch out like a tree, with the individual files in the system functioning as the end-points of each of the branches.
 
@@ -146,13 +146,13 @@ background-image: url(img/commandline/filesystem.png)
 
 ###1. Paths
 
-In the command line, we use this file system to navigate through the data on our computer. Say we want to point to the `manual.pdf` file from the file system in the previous slide, we need to specify a **path** to navigate trough the different **directories** on the system like so: 
+In the command line, we use this file system to navigate through the data on our computer. Say we want to point to the `manual.pdf` file from the file system in the previous slide, we need to specify a **path** to navigate trough the different **directories** on the system like so:
 
 ```bash
 /Users/User_1/Documents/manual.pdf
 ```
 
-In this path, we move further and further down into new directories by using a forward slashes. We start at the root `/`, move into the `Users` directory, then into the home directory of `User_1`, then into her `Documents` folder, where we find the `manual.pdf` file. 
+In this path, we move further and further down into new directories by using a forward slashes. We start at the root `/`, move into the `Users` directory, then into the home directory of `User_1`, then into her `Documents` folder, where we find the `manual.pdf` file.
 
 .note[**Note**: The `/` at the start of the path is **crucial** here! It indicates that this is an **absolute path**, meaning that it starts at the **root** of the file system. We will distinguish this from **relative paths** [further down in this crash course.](#relative)]
 
@@ -172,7 +172,7 @@ To find out where you are, type: `pwd` in the terminal and hit `enter`. The outp
 
 ```bash
 pwd
-	
+
 /Users/User_1
 ```
 
@@ -208,12 +208,12 @@ name: cd
 To change to a directory inside of your `pwd`, use the `cd` command. To see the change, first we'll check again where we are in the file system:
 
 ```bash
-pwd 
+pwd
 
 /Users/User_1
 ```
 
-Now we change into the `Documents` directory inside of our present working directory: 
+Now we change into the `Documents` directory inside of our present working directory:
 
 ```bash
 cd Documents
@@ -298,7 +298,7 @@ cd Documents
 
 takes us into the `Documents` directory **inside the directory we currently are in** – i.e. our `pwd` (here: `/Users/User_1`)
 
-You can always use an absolute path to get you where you want to, regardless of where you are: 
+You can always use an absolute path to get you where you want to, regardless of where you are:
 
 ```bash
 cd /Users/User_1
@@ -320,18 +320,18 @@ name: tips
 
 - **Autocomplete** | `tab`
 
-    The terminal has an autocomplete function, where it will finish writing directory and file names for you when you enter the `tab` key. 
-    
+    The terminal has an autocomplete function, where it will finish writing directory and file names for you when you enter the `tab` key.
+
     So when you are in your `Home Directory`, start to type `cd Doc`, and hit the `tab` key, the terminal will complete this into `cd Documents/`.
-    
+
     If there are multiple files or directories that start with the same combination of letters, terminal will not return anything. Hitting the `tab` key twice in such a case will return a list of all the files or directories that start with that combination of letters.
-    
+
     For example:
-    
+
 
 ```bash
 cd Do+tab+tab
-    
+
 Documents/ Downloads
  ```
 
@@ -343,10 +343,10 @@ Documents/ Downloads
 
     The terminal also stores the commands you've recently entered in it's memory, and you can navigate through them by hitting the `arrow-up` and `arrow-down` keys. This can be handy when you need to repeat a long and complicated command.
 
-- **Remember**: computers are case sensitive! 
+- **Remember**: computers are case sensitive!
 
     Writing `documents` instead of `Documents` as a path in your `cd` command will return:
-    
+
 ```bash
 No such file or directory
 ```
@@ -358,7 +358,7 @@ No such file or directory
 - **A Note on Whitespace**
 
     Using whitespace in file and folder names makes it more difficult to navigate your computer from the command line. Say we have a directory inside `Documents` that's called `My Thesis`. Entering the following command will then return an error:
-    
+
 ```bash
 cd Documents/My Thesis
 
@@ -435,14 +435,14 @@ frankenpi
 wout
 woutfile.txt
 ```
-Or, you can create `anotherwoutfile.txt` directly inside the `wout` directory we just created by using another relative path: 
+Or, you can create `anotherwoutfile.txt` directly inside the `wout` directory we just created by using another relative path:
 ```bash
 touch wout/anotherwoutfile.txt
 ```
 We can use relative (and absolute) paths for `ls` too, to snow items in the `wout` directory without changing your `pwd`:
 ```bash
 ls wout
-	
+
 anotherwoutfile.txt
 ```
 
@@ -472,12 +472,12 @@ name: rm
 
 ###4. Removing files | `rm`
 
-Removing a file is simple, using the `rm` command: 
+Removing a file is simple, using the `rm` command:
 
 ```bash
 rm wout/anotherwoutfile.txt
 ```
-If you now use `ls wout`, you should notice that the files are no longer listed in the directory’s contents. 
+If you now use `ls wout`, you should notice that the files are no longer listed in the directory’s contents.
 
 ???
 If you are working on a Windows or Mac system, you can always double-check this in the GUI by using `open wout` or `explorer wout`.
@@ -502,7 +502,7 @@ Our shell is worried that you may still need the files inside the directory. You
 ```bash
 rm -rf wout
 ```
-This command will effectively remove your `wout` directory from your hard drive, as well as anything else that may still be contained within that directory. 
+This command will effectively remove your `wout` directory from your hard drive, as well as anything else that may still be contained within that directory.
 
 .warning[**CAREFUL:** By using the shell, you are bypassing your system's GUI, which means that the files and directories you delete **will no longer be recoverably through your system's trash folder**! **USE WITH CAUTION!** This gives you the power to **remove your entire hard drive** with a single command!]
 
@@ -563,13 +563,13 @@ name: mv
 mv wout.txt Desktop/.
 ```
 
-The `.` at the end here again indicates that we don’t want to change the file’s name in the process. 
+The `.` at the end here again indicates that we don’t want to change the file’s name in the process.
 
-Using `ls` you should now be able to verify that the `wout.txt` file is no longer present in your `home` directory. It has been _moved_ rather than _copied_. 
+Using `ls` you should now be able to verify that the `wout.txt` file is no longer present in your `home` directory. It has been _moved_ rather than _copied_.
 
-.warning[**Careful!** At this point, there was already a file on your `Desktop` called `wout.txt`. 
+.warning[**Careful!** At this point, there was already a file on your `Desktop` called `wout.txt`.
 
-Copying or moving a file (a) into a directory that already contains a file with the same name (b) will effectively overwrite the former with the latter. 
+Copying or moving a file (a) into a directory that already contains a file with the same name (b) will effectively overwrite the former with the latter.
 
 In the command line, there is no prompt to warn you that you are doing so – unlike in your GUI, where you will typically be asked whether you would like to **overwrite** (b), or **rename** (a).]
 
@@ -593,7 +593,7 @@ To rename a file, you would move the file to the same location, but with a diffe
 mv wout.txt newwout.txt
 ```
 
-Using `ls` you should now be able to **verify** that the `wout.txt` file is no longer present in your `Desktop` directory, but that it contains a `newwout.txt` file instead. 
+Using `ls` you should now be able to **verify** that the `wout.txt` file is no longer present in your `Desktop` directory, but that it contains a `newwout.txt` file instead.
 
 ---
 
@@ -615,7 +615,7 @@ This means that if you have entered the above command, there will be no more `.t
 
 ---
 
-name: ex 
+name: ex
 class: darkslide
 
 ##Exercise
@@ -623,7 +623,7 @@ class: darkslide
 1. First, move to your `Desktop`.
 2. Once you are there, create a new directory with your name on it (e.g. `wout`).
 3. Once you're done, move to the `Downloads` folder in your RPi, and wait for your team members to reach this step.
-4. Have **one of your team members** download a folder into this directory using the following command: <br/> `wget http://www.woutdillen.be/gutenberg.tar.gz` <br/> This is a compressed folder.
+4. Have **one of your team members** download a folder into this directory using the following command: <br/> `wget https://github.com/WoutDLN/rp4if/raw/main/materials/gutenberg.tar.gz` <br/> This is a compressed folder.
 5. Once the file is downloaded, **the other team member** extracts the `gutenberg` directory from the compressed folder using `tar -xzf gutenberg.tar.gz`
 6. Each member of your team copies (don't move!) the `gutenberg` directory from  `Downloads` into your own folder on the `Desktop` (e.g. `Desktop/wout`).
 6. Inside your own folder, you each create two new directories: `austen` and `dickens`.
@@ -650,11 +650,11 @@ class: darkslide
 
 ##Credits and Copyright
 
-This tutorial was developed by Wout Dillen and Joshua Schäuble at the [Centre for Manuscript Genetics](https://www.uantwerpen.be/en/research-groups/centre-for-manuscript-genetics/) (CMG), as part of the [IIIF](https://iiif.io) courses of the [University of Antwerp](https://www.uantwerpen.be/)'s Summer School on [Digital Humanities](https://www.uantwerpen.be/en/summer-schools/digital-humanities--/). This is a one-week summer school organized by the [Antwerp Centre for Digital humanities and literary Criticism](https://www.uantwerpen.be/en/research-groups/digitalhumanities/) (ACDC). 
+This tutorial was developed by Wout Dillen and Joshua Schäuble at the [Centre for Manuscript Genetics](https://www.uantwerpen.be/en/research-groups/centre-for-manuscript-genetics/) (CMG), as part of the [IIIF](https://iiif.io) courses of the [University of Antwerp](https://www.uantwerpen.be/)'s Summer School on [Digital Humanities](https://www.uantwerpen.be/en/summer-schools/digital-humanities--/). This is a one-week summer school organized by the [Antwerp Centre for Digital humanities and literary Criticism](https://www.uantwerpen.be/en/research-groups/digitalhumanities/) (ACDC).
 
-The course was first taught in Antwerp in 2018 (3-7 September), and an adapted version was taught again in 2019 (1-5 July). In the course, students learn how to set up a IIIF-compatible image server ([iipimage](http://iipimage.sourceforge.net)) on a local network of [Raspberry Pi](https://www.raspberrypi.org) computers, to ultimately re-use and manipulate each other's images using the IIIF protocol. 
+The course was first taught in Antwerp in 2018 (3-7 September), and an adapted version was taught again in 2019 (1-5 July). In the course, students learn how to set up a IIIF-compatible image server ([iipimage](http://iipimage.sourceforge.net)) on a local network of [Raspberry Pi](https://www.raspberrypi.org) computers, to ultimately re-use and manipulate each other's images using the IIIF protocol.
 
-The summer school's first edition was generously sponsored by the University of Antwerp's [Literature Department](https://www.uantwerpen.be/en/faculties/faculty-of-arts/research-and-valoris/departments/department-of-literature/), the [Antwerp Summer University](https://www.uantwerpen.be/en/education/international/international-students/antwerp-summer-university/), the Flemish Government's [Department of Economy, Science, and Innovation](https://www.ewi-vlaanderen.be), [Digital Humanities Flanders](http://uahost.uantwerpen.be/platformdh/index.php/dhu-f/) (DHu.F), and [DARIAH-BE](http://be.dariah.eu) – the last of which provided us with the course's hardware and the opportunity to develop these tutorials further. 
+The summer school's first edition was generously sponsored by the University of Antwerp's [Literature Department](https://www.uantwerpen.be/en/faculties/faculty-of-arts/research-and-valoris/departments/department-of-literature/), the [Antwerp Summer University](https://www.uantwerpen.be/en/education/international/international-students/antwerp-summer-university/), the Flemish Government's [Department of Economy, Science, and Innovation](https://www.ewi-vlaanderen.be), [Digital Humanities Flanders](http://uahost.uantwerpen.be/platformdh/index.php/dhu-f/) (DHu.F), and [DARIAH-BE](http://be.dariah.eu) – the last of which provided us with the course's hardware and the opportunity to develop these tutorials further.
 
 These tutorials are published under a Creative Commons Share Alike licence ([CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)). This means that you can re-use (share and adapt) these slides provided you provide sufficient attribution and publish and distribute the result under the same license.
 
