@@ -112,6 +112,8 @@ name: shells
 
 ---
 
+name: shelldisclaimer
+
 ###2. 	Shell Flavours
 
 .note[**Note:** These commands are all **bash** commands (Unix shell), that work on **Unix-Based Operating Systems**.
